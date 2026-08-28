@@ -13,6 +13,7 @@
       --bg: #121212; 
       --card: #1e1e1e; 
       --accent: #00adb5; 
+      --spotify: #1db954;
       --text: #eeeeee; 
       --subtext: #aaaaaa; 
     }
@@ -24,17 +25,21 @@
       padding: 15px; 
       padding-bottom: 80px;
     }
-    .container { max-width: 900px; margin: 0 auto; }
+    .container { max-width: 950px; margin: 0 auto; }
     h1, h2, h3 { color: var(--accent); margin-top: 0; }
     .card { background: var(--card); padding: 15px; border-radius: 8px; margin-bottom: 15px; }
     .flex-row { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
-    input, select, textarea, button { 
+    input, select, textarea, button, a.btn-link { 
       padding: 8px 12px; 
       border-radius: 5px; 
       border: 1px solid #333; 
       background: #2a2a2a; 
       color: #fff; 
       font-size: 14px; 
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      box-sizing: border-box;
     }
     input[type="text"], textarea { flex: 1; min-width: 180px; }
     
@@ -53,21 +58,42 @@
       border-color: var(--accent);
     }
 
-    button { background: var(--accent); color: #000; font-weight: bold; cursor: pointer; border: none; }
-    button:hover { opacity: 0.9; }
-    button.secondary { background: #444; color: #fff; }
+    button, a.btn-link { background: var(--accent); color: #000; font-weight: bold; cursor: pointer; border: none; }
+    button:hover, a.btn-link:hover { opacity: 0.9; }
+    button.secondary, a.btn-link.secondary { background: #444; color: #fff; }
     button.danger { background: #900; color: #fff; }
     button:disabled { opacity: 0.3; cursor: not-allowed; }
 
+    /* Spotify Button Specific Styling */
+    .btn-spotify {
+      background: var(--spotify);
+      color: #000;
+      font-weight: bold;
+      border: none;
+      padding: 4px 8px;
+      font-size: 12px;
+      border-radius: 4px;
+      gap: 4px;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+    .btn-spotify:hover {
+      background: #1ed760;
+      color: #000;
+    }
+
     ul { list-style: none; padding: 0; margin: 0; }
+    
+    /* Clean 3-Column Layout for Song Cards */
     li.song-item { 
       background: #282828; 
       padding: 10px 15px; 
       margin-bottom: 6px; 
       border-radius: 5px; 
-      display: flex; 
-      justify-content: space-between; 
-      align-items: center; 
+      display: grid;
+      grid-template-columns: 1fr auto auto;
+      align-items: center;
+      gap: 12px;
     }
     li.draggable-item {
       cursor: grab;
@@ -89,6 +115,34 @@
       background: #2c3839;
     }
 
+    /* Column Specific Sections */
+    .song-title-group {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+      min-width: 0;
+    }
+    .song-title-group strong {
+      word-break: break-word;
+    }
+
+    .song-meta-badges {
+      display: flex;
+      gap: 6px;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .song-actions {
+      display: flex;
+      gap: 6px;
+      align-items: center;
+      justify-content: flex-end;
+      white-space: nowrap;
+    }
+
     .inline-chart-container {
       background: #181818;
       border: 1px solid var(--accent);
@@ -105,23 +159,22 @@
       line-height: 1.2; 
       overflow-x: auto; 
     }
-    .chart-line { 
-      display: flex; 
-      flex-wrap: wrap; 
-      margin-bottom: 4px; 
-      align-items: flex-end;
-    }
     .plain-line {
       margin-bottom: 4px;
       color: var(--text);
       font-size: 15px;
       white-space: pre-wrap;
     }
+    .chord-line { 
+      display: flex; 
+      flex-wrap: wrap; 
+      margin-bottom: 4px; 
+      align-items: flex-end;
+    }
     .chord-pair { 
       display: inline-flex; 
       flex-direction: column; 
       align-items: flex-start; 
-      margin-right: 0; 
     }
     .chord { 
       color: var(--accent); 
@@ -140,10 +193,34 @@
       white-space: pre;
     }
 
-    .song-meta { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
-    .badge { background: #333; padding: 2px 6px; border-radius: 4px; font-size: 12px; color: var(--subtext); }
+    .badge { background: #333; padding: 3px 6px; border-radius: 4px; font-size: 12px; color: var(--subtext); white-space: nowrap; }
     .badge-genre { background: #004d40; color: #80cbc4; }
-    .drag-handle { cursor: grab; color: var(--subtext); margin-right: 8px; font-weight: bold; }
+    
+    .badge-bpm { 
+      background: #4a2700; 
+      color: #ffb74d; 
+      border: 1px solid #ffb74d;
+      cursor: pointer;
+      font-weight: bold;
+      transition: all 0.2s ease;
+      white-space: nowrap;
+    }
+    .badge-bpm:hover {
+      background: #6e3900;
+      color: #fff;
+    }
+    .badge-bpm.metronome-active {
+      background: #ff9800;
+      color: #000;
+      animation: bpmPulse 0.8s infinite alternate;
+    }
+
+    @keyframes bpmPulse {
+      from { opacity: 0.75; transform: scale(0.98); }
+      to { opacity: 1; transform: scale(1.04); }
+    }
+
+    .drag-handle { cursor: grab; color: var(--subtext); font-weight: bold; flex-shrink: 0; }
 
     #scrollDownBtn {
       position: fixed;
@@ -160,6 +237,16 @@
       justify-content: center;
       background: var(--accent);
       color: #000;
+    }
+
+    @media (max-width: 768px) {
+      li.song-item {
+        grid-template-columns: 1fr;
+        gap: 8px;
+      }
+      .song-meta-badges, .song-actions {
+        justify-content: flex-start;
+      }
     }
   </style>
 </head>
@@ -285,6 +372,12 @@
     let draggedIndex = null;
     let hasUnsavedChanges = false;
 
+    // Metronome Audio Context & State
+    let audioCtx = null;
+    let activeMetronomeInterval = null;
+    let activeMetronomeBpm = null;
+    let metronomeBeatCount = 0;
+
     const STARTER_LIBRARY = [
       {
         id: "bg_001",
@@ -316,6 +409,11 @@
       activeSetlistId: 'set_1'
     };
 
+    function getSpotifySearchUrl(title, artist) {
+      const query = `${title || ''} ${artist || ''}`.trim();
+      return `https://open.spotify.com/search/${encodeURIComponent(query)}`;
+    }
+
     window.addEventListener('beforeunload', (e) => {
       if (hasUnsavedChanges) {
         e.preventDefault();
@@ -323,6 +421,67 @@
         return e.returnValue;
       }
     });
+
+    /* --- METRONOME ENGINE --- */
+    function toggleMetronome(bpm, timeSig = "4/4") {
+      const parsedBpm = Number(bpm);
+      if (!parsedBpm) return;
+
+      if (activeMetronomeInterval && activeMetronomeBpm === parsedBpm) {
+        stopMetronome();
+        return;
+      }
+
+      stopMetronome();
+
+      if (!audioCtx) {
+        audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+      }
+
+      const beatsPerMeasure = parseInt(timeSig) || 4;
+      const intervalMs = (60 / parsedBpm) * 1000;
+      
+      activeMetronomeBpm = parsedBpm;
+      metronomeBeatCount = 0;
+
+      playClickSound(true);
+
+      activeMetronomeInterval = setInterval(() => {
+        metronomeBeatCount = (metronomeBeatCount + 1) % beatsPerMeasure;
+        playClickSound(metronomeBeatCount === 0);
+      }, intervalMs);
+
+      renderUI();
+    }
+
+    function playClickSound(isAccent) {
+      if (!audioCtx) return;
+      if (audioCtx.state === 'suspended') {
+        audioCtx.resume();
+      }
+
+      const osc = audioCtx.createOscillator();
+      const gain = audioCtx.createGain();
+
+      osc.frequency.value = isAccent ? 1000 : 800;
+      gain.gain.value = 1;
+      gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.05);
+
+      osc.connect(gain);
+      gain.connect(audioCtx.destination);
+
+      osc.start();
+      osc.stop(audioCtx.currentTime + 0.05);
+    }
+
+    function stopMetronome() {
+      if (activeMetronomeInterval) {
+        clearInterval(activeMetronomeInterval);
+        activeMetronomeInterval = null;
+        activeMetronomeBpm = null;
+        renderUI();
+      }
+    }
 
     async function loadMasterLibrary() {
       const savedState = localStorage.getItem('band_app_state');
@@ -443,6 +602,9 @@
         if (!song) return;
 
         const isChartOpen = activeChartSetlistIndex === index;
+        const isBpmActive = activeMetronomeBpm === Number(song.bpm);
+        const spotifyUrl = getSpotifySearchUrl(song.title, song.artist);
+
         const li = document.createElement('li');
         li.className = `song-item draggable-item ${isChartOpen ? 'active-chart-item' : ''}`;
         li.draggable = true;
@@ -455,14 +617,30 @@
         li.addEventListener('dragend', handleDragEnd);
 
         li.innerHTML = `
-          <div class="song-meta">
+          <div class="song-title-group">
             <span class="drag-handle">☰</span>
             <strong>${index + 1}. ${song.title}</strong>
+            <a href="${spotifyUrl}" target="_blank" rel="noopener noreferrer" class="btn-link btn-spotify" title="Listen on Spotify" onclick="event.stopPropagation();">
+              <span>▶</span> Spotify
+            </a>
+          </div>
+
+          <div class="song-meta-badges">
             ${song.originalKey ? `<span class="badge">Key: ${song.originalKey}</span>` : ''}
             ${song.timeSignature ? `<span class="badge">${song.timeSignature}</span>` : ''}
+            ${song.bpm ? `
+              <button 
+                type="button" 
+                onclick="event.stopPropagation(); toggleMetronome(${song.bpm}, '${song.timeSignature || '4/4'}')" 
+                class="badge badge-bpm ${isBpmActive ? 'metronome-active' : ''}" 
+                title="${isBpmActive ? 'Click to stop metronome' : 'Click to play metronome at ' + song.bpm + ' BPM'}">
+                ${isBpmActive ? '🔊' : '⏱️'} ${song.bpm} BPM
+              </button>
+            ` : ''}
             ${song.genre ? `<span class="badge badge-genre">${song.genre}</span>` : ''}
           </div>
-          <div>
+
+          <div class="song-actions">
             <button onclick="toggleInlineChart(${index})" class="${isChartOpen ? '' : 'secondary'}">
               ${isChartOpen ? 'Close Chart' : 'View Chart'}
             </button>
@@ -490,7 +668,6 @@
         activeChartSetlistIndex = newIndex;
         renderActiveSetlist();
 
-        // Scroll smooth to top of newly opened song chart
         setTimeout(() => {
           const container = document.querySelector('.inline-chart-container');
           if (container) {
@@ -650,17 +827,36 @@
       }
 
       songs.forEach(song => {
+        const isBpmActive = activeMetronomeBpm === Number(song.bpm);
+        const spotifyUrl = getSpotifySearchUrl(song.title, song.artist);
+
         const li = document.createElement('li');
         li.className = 'song-item';
         li.innerHTML = `
-          <div class="song-meta">
+          <div class="song-title-group">
             <strong>${song.title}</strong>
             <span class="badge">${song.artist || 'Traditional'}</span>
+            <a href="${spotifyUrl}" target="_blank" rel="noopener noreferrer" class="btn-link btn-spotify" title="Listen on Spotify">
+              <span>▶</span> Spotify
+            </a>
+          </div>
+
+          <div class="song-meta-badges">
             ${song.originalKey ? `<span class="badge">Key: ${song.originalKey}</span>` : ''}
             ${song.timeSignature ? `<span class="badge">${song.timeSignature}</span>` : ''}
+            ${song.bpm ? `
+              <button 
+                type="button" 
+                onclick="event.stopPropagation(); toggleMetronome(${song.bpm}, '${song.timeSignature || '4/4'}')" 
+                class="badge badge-bpm ${isBpmActive ? 'metronome-active' : ''}" 
+                title="${isBpmActive ? 'Click to stop metronome' : 'Click to play metronome at ' + song.bpm + ' BPM'}">
+                ${isBpmActive ? '🔊' : '⏱️'} ${song.bpm} BPM
+              </button>
+            ` : ''}
             ${song.genre ? `<span class="badge badge-genre">${song.genre}</span>` : ''}
           </div>
-          <div>
+
+          <div class="song-actions">
             <button onclick="addSongToSetlist('${song.id}')">+ Add to Setlist</button>
             <button onclick="editSong('${song.id}')" class="secondary">Edit</button>
             <button onclick="deleteSongFromLibrary('${song.id}')" class="danger">Delete</button>
@@ -850,10 +1046,14 @@
     document.getElementById('songForm').addEventListener('submit', (e) => {
       e.preventDefault();
       const id = document.getElementById('songId').value || 'song_' + Math.random().toString(36).substr(2, 9);
+      const title = document.getElementById('title').value;
+      const artist = document.getElementById('artist').value;
+
       const songData = {
         id,
-        title: document.getElementById('title').value,
-        artist: document.getElementById('artist').value,
+        title,
+        artist,
+        spotifyUrl: getSpotifySearchUrl(title, artist),
         originalKey: document.getElementById('originalKey').value,
         timeSignature: document.getElementById('timeSignature').value,
         bpm: document.getElementById('bpm').value,
@@ -917,7 +1117,7 @@
       currentSet.songIds.forEach((id, index) => {
         const song = state.library.find(s => s.id === id);
         if (song) {
-          text += `${index + 1}. ${song.title}${song.originalKey ? ` (Key: ${song.originalKey})` : ''}${song.timeSignature ? ` [${song.timeSignature}]` : ''}\n`;
+          text += `${index + 1}. ${song.title}${song.originalKey ? ` (Key: ${song.originalKey})` : ''}${song.timeSignature ? ` [${song.timeSignature}]` : ''}${song.bpm ? ` [${song.bpm} BPM]` : ''}\n`;
         }
       });
 
@@ -926,6 +1126,11 @@
     }
 
     function exportJSON() {
+      const updatedLibrary = state.library.map(song => ({
+        ...song,
+        spotifyUrl: getSpotifySearchUrl(song.title, song.artist)
+      }));
+
       const exportObject = {
         activeSetlistId: state.activeSetlistId,
         setlists: state.setlists.map(setlist => ({
@@ -934,7 +1139,7 @@
           status: setlist.status || 'active',
           songIds: [...setlist.songIds]
         })),
-        library: state.library
+        library: updatedLibrary
       };
 
       const blob = new Blob([JSON.stringify(exportObject, null, 2)], { type: 'application/json' });
