@@ -250,7 +250,6 @@
       <div class="flex-row" style="justify-content: space-between; margin-bottom: 15px;">
         <h2 style="margin: 0;">Master Repertoire Library (A-Z)</h2>
         <div class="flex-row">
-          <button onclick="syncFromServer()" class="secondary" style="border: 1px solid var(--accent);">↻ Sync from Server</button>
           <button onclick="exportJSON()" style="border: 2px solid #fff;">Download Setlist & Library JSON</button>
           <button class="secondary" onclick="triggerEmail()">Email Library</button>
         </div>
@@ -317,7 +316,6 @@
       activeSetlistId: 'set_1'
     };
 
-    // Prompt user before closing tab if there are unsaved edits
     window.addEventListener('beforeunload', (e) => {
       if (hasUnsavedChanges) {
         e.preventDefault();
@@ -327,7 +325,6 @@
     });
 
     async function loadMasterLibrary() {
-      // 1. First load cached data for fast initial rendering
       const savedState = localStorage.getItem('band_app_state');
       if (savedState) {
         try {
@@ -337,46 +334,31 @@
         }
       }
 
-      // 2. Fetch fresh JSON from GitHub using cache-busting
       try {
-        const response = await fetch('master-library.json?v=' + Date.now(), {
-          cache: 'no-store'
-        });
-
+        const response = await fetch('master-library.json?v=' + Date.now(), { cache: 'no-store' });
         if (response.ok) {
           const remoteData = await response.json();
           
-          if (remoteData.library) {
+          if (Array.isArray(remoteData)) {
+            state.library = remoteData;
+          } else if (remoteData.library) {
             state.library = remoteData.library;
             if (remoteData.setlists && remoteData.setlists.length > 0) {
               state.setlists = remoteData.setlists;
-              // Ensure the active setlist points to a valid list
-              const exists = state.setlists.some(s => s.id === state.activeSetlistId);
-              if (!exists) {
-                state.activeSetlistId = remoteData.setlists[0].id;
+              if (remoteData.activeSetlistId && state.setlists.some(s => s.id === remoteData.activeSetlistId)) {
+                state.activeSetlistId = remoteData.activeSetlistId;
+              } else {
+                state.activeSetlistId = state.setlists[0].id;
               }
             }
-          } else if (Array.isArray(remoteData)) {
-            state.library = remoteData;
           }
-          
-          // Overwrite local storage with the server's master state
           localStorage.setItem('band_app_state', JSON.stringify(state));
         }
       } catch (err) {
-        console.log("Could not fetch fresh master-library.json from server, falling back to cached state.", err);
+        console.log("Could not load master-library.json, using local cache.", err);
       }
 
       renderUI();
-    }
-
-    async function syncFromServer() {
-      if (confirm("Syncing will pull the latest setlists and library from the server. Continue?")) {
-        localStorage.removeItem('band_app_state');
-        hasUnsavedChanges = false;
-        await loadMasterLibrary();
-        alert("Synced latest setlists from server!");
-      }
     }
 
     function saveState(markDirty = true) {
@@ -409,7 +391,6 @@
       return lib.sort((a, b) => a.title.localeCompare(b.title));
     }
 
-    // --- Drag & Drop ---
     function handleDragStart(e) {
       draggedIndex = Number(e.currentTarget.dataset.index);
       e.currentTarget.classList.add('dragging');
@@ -449,7 +430,6 @@
       draggedIndex = null;
     }
 
-    // --- Active Setlist & Inline Chart Display ---
     function renderActiveSetlist() {
       const currentSet = state.setlists.find(s => s.id === state.activeSetlistId);
       document.getElementById('currentSetlistTitle').innerText = currentSet ? currentSet.name : 'Setlist';
@@ -509,6 +489,14 @@
       if (currentSet && newIndex >= 0 && newIndex < currentSet.songIds.length) {
         activeChartSetlistIndex = newIndex;
         renderActiveSetlist();
+
+        // Scroll smooth to top of newly opened song chart
+        setTimeout(() => {
+          const container = document.querySelector('.inline-chart-container');
+          if (container) {
+            container.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        }, 50);
       }
     }
 
@@ -939,7 +927,13 @@
 
     function exportJSON() {
       const exportObject = {
-        setlists: state.setlists,
+        activeSetlistId: state.activeSetlistId,
+        setlists: state.setlists.map(setlist => ({
+          id: setlist.id,
+          name: setlist.name,
+          status: setlist.status || 'active',
+          songIds: [...setlist.songIds]
+        })),
         library: state.library
       };
 
@@ -950,6 +944,7 @@
       a.click();
 
       hasUnsavedChanges = false;
+      alert("Exported! Rename this file to master-library.json and upload to GitHub.");
     }
 
     function triggerEmail() {
