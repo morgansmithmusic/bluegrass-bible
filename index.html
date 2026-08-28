@@ -250,6 +250,7 @@
       <div class="flex-row" style="justify-content: space-between; margin-bottom: 15px;">
         <h2 style="margin: 0;">Master Repertoire Library (A-Z)</h2>
         <div class="flex-row">
+          <button onclick="syncFromServer()" class="secondary" style="border: 1px solid var(--accent);">↻ Sync from Server</button>
           <button onclick="exportJSON()" style="border: 2px solid #fff;">Download Setlist & Library JSON</button>
           <button class="secondary" onclick="triggerEmail()">Email Library</button>
         </div>
@@ -326,13 +327,22 @@
     });
 
     async function loadMasterLibrary() {
+      // 1. First load cached data for fast initial rendering
       const savedState = localStorage.getItem('band_app_state');
       if (savedState) {
-        state = JSON.parse(savedState);
+        try {
+          state = JSON.parse(savedState);
+        } catch (e) {
+          console.error("Failed to parse local storage", e);
+        }
       }
 
+      // 2. Fetch fresh JSON from GitHub using cache-busting
       try {
-        const response = await fetch('master-library.json');
+        const response = await fetch('master-library.json?v=' + Date.now(), {
+          cache: 'no-store'
+        });
+
         if (response.ok) {
           const remoteData = await response.json();
           
@@ -340,18 +350,33 @@
             state.library = remoteData.library;
             if (remoteData.setlists && remoteData.setlists.length > 0) {
               state.setlists = remoteData.setlists;
-              state.activeSetlistId = remoteData.setlists[0].id;
+              // Ensure the active setlist points to a valid list
+              const exists = state.setlists.some(s => s.id === state.activeSetlistId);
+              if (!exists) {
+                state.activeSetlistId = remoteData.setlists[0].id;
+              }
             }
           } else if (Array.isArray(remoteData)) {
             state.library = remoteData;
           }
+          
+          // Overwrite local storage with the server's master state
           localStorage.setItem('band_app_state', JSON.stringify(state));
         }
       } catch (err) {
-        console.log("Could not load master-library.json, using local cache.", err);
+        console.log("Could not fetch fresh master-library.json from server, falling back to cached state.", err);
       }
 
       renderUI();
+    }
+
+    async function syncFromServer() {
+      if (confirm("Syncing will pull the latest setlists and library from the server. Continue?")) {
+        localStorage.removeItem('band_app_state');
+        hasUnsavedChanges = false;
+        await loadMasterLibrary();
+        alert("Synced latest setlists from server!");
+      }
     }
 
     function saveState(markDirty = true) {
