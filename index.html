@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <meta name="googlebot" content="noindex, nofollow">
+  
+  <title>Bluegrass Bible</title>
+  <style>
+    :root { 
+      --bg: #121212; 
+      --card: #1e1e1e; 
+      --accent: #00adb5; 
+      --text: #eeeeee; 
+      --subtext: #aaaaaa; 
+    }
+    body { 
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; 
+      background: var(--bg); 
+      color: var(--text); 
+      margin: 0; 
+      padding: 15px; 
+      padding-bottom: 80px;
+    }
+    .container { max-width: 900px; margin: 0 auto; }
+    h1, h2, h3 { color: var(--accent); margin-top: 0; }
+    .card { background: var(--card); padding: 15px; border-radius: 8px; margin-bottom: 15px; }
+    .flex-row { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
+    input, select, textarea, button { 
+      padding: 8px 12px; 
+      border-radius: 5px; 
+      border: 1px solid #333; 
+      background: #2a2a2a; 
+      color: #fff; 
+      font-size: 14px; 
+    }
+    input[type="text"], textarea { flex: 1; min-width: 180px; }
+    
+    /* Expanded Editor Textarea */
+    textarea { 
+      width: 100%; 
+      height: 450px; 
+      font-family: monospace; 
+      font-size: 15px;
+      line-height: 1.4;
+      padding: 12px;
+      box-sizing: border-box; 
+      resize: vertical;
+    }
+    textarea:focus {
+      outline: 1px solid var(--accent);
+      border-color: var(--accent);
+    }
+
+    button { background: var(--accent); color: #000; font-weight: bold; cursor: pointer; border: none; }
+    button:hover { opacity: 0.9; }
+    button.secondary { background: #444; color: #fff; }
+    button.danger { background: #900; color: #fff; }
+    button:disabled { opacity: 0.3; cursor: not-allowed; }
+
+    /* Setlist Drag & Drop Items */
+    ul { list-style: none; padding: 0; margin: 0; }
+    li.song-item { 
+      background: #282828; 
+      padding: 10px 15px; 
+      margin-bottom: 6px; 
+      border-radius: 5px; 
+      display: flex; 
+      justify-content: space-between; 
+      align-items: center; 
+    }
+    li.draggable-item {
+      cursor: grab;
+      user-select: none;
+      transition: background 0.2s ease, opacity 0.2s ease;
+    }
+    li.draggable-item:active {
+      cursor: grabbing;
+    }
+    li.dragging {
+      opacity: 0.4;
+      background: #333;
+    }
+    li.drag-over {
+      border: 2px dashed var(--accent);
+    }
+    li.active-chart-item {
+      border-left: 4px solid var(--accent);
+      background: #2c3839;
+    }
+
+    /* Inline Chart Container Styling */
+    .inline-chart-container {
+      background: #181818;
+      border: 1px solid var(--accent);
+      border-radius: 6px;
+      padding: 12px;
+      margin-bottom: 12px;
+    }
+
+    /* Ultra-Compact Chart Formatting */
+    .chart-view { 
+      background: #000; 
+      padding: 12px 15px; 
+      border-radius: 6px; 
+      font-family: monospace; 
+      line-height: 1.2; 
+      overflow-x: auto; 
+    }
+    .chart-line { 
+      display: flex; 
+      flex-wrap: wrap; 
+      margin-bottom: 4px; 
+      align-items: flex-end;
+    }
+    .plain-line {
+      margin-bottom: 4px;
+      color: var(--text);
+      font-size: 15px;
+      white-space: pre-wrap;
+    }
+    .chord-pair { 
+      display: inline-flex; 
+      flex-direction: column; 
+      align-items: flex-start; 
+      margin-right: 0; 
+    }
+    .chord { 
+      color: var(--accent); 
+      font-weight: bold; 
+      font-size: 13px; 
+      height: 16px; 
+      line-height: 16px;
+      margin-bottom: 1px;
+    }
+    .chords-hidden .chord {
+      display: none !important;
+    }
+    .lyric { 
+      color: var(--text); 
+      font-size: 15px; 
+      white-space: pre;
+    }
+
+    .song-meta { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+    .badge { background: #333; padding: 2px 6px; border-radius: 4px; font-size: 12px; color: var(--subtext); }
+    .badge-genre { background: #004d40; color: #80cbc4; }
+    .drag-handle { cursor: grab; color: var(--subtext); margin-right: 8px; font-weight: bold; }
+
+    /* Floating Scroll Button */
+    #scrollDownBtn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 999;
+      border-radius: 50%;
+      width: 55px;
+      height: 55px;
+      font-size: 22px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.6);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--accent);
+      color: #000;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Bluegrass Bible</h1>
+
+    <div class="card">
+      <div class="flex-row">
+        <label><strong>Active Setlist:</strong></label>
+        <select id="setlistSelect" onchange="switchSetlist(this.value)"></select>
+        <button onclick="createNewSetlist()">+ New List</button>
+        <button class="secondary" onclick="archiveCurrentSetlist()">Archive Active List</button>
+        <button class="secondary" onclick="toggleArchiveDrawer()">Restore Archived Lists</button>
+        <button class="secondary" onclick="copySetlistAsText()">Copy Text for SMS</button>
+        <button class="secondary" onclick="toggleImportDrawer()" style="border: 1px solid var(--accent);">Import Setlist from Text</button>
+      </div>
+
+      <div id="archiveDrawer" style="display: none; margin-top: 15px; border-top: 1px solid #333; padding-top: 10px;">
+        <h3 style="margin-bottom: 8px; font-size: 15px;">Archived Setlists</h3>
+        <div id="archivedListsContainer" class="flex-row"></div>
+      </div>
+
+      <div id="importDrawer" style="display: none; margin-top: 15px; border-top: 1px solid #333; padding-top: 10px;">
+        <h3 style="margin-bottom: 6px; font-size: 15px;">Import Setlist from Text / SMS</h3>
+        <p style="font-size: 12px; color: var(--subtext); margin-top: 0; margin-bottom: 8px;">
+          Paste a copied setlist text below. The builder will automatically parse song titles and assemble your setlist.
+        </p>
+        <input type="text" id="importSetlistName" placeholder="New Setlist Name (e.g. Friday Gig Set 1)" style="width: 100%; margin-bottom: 8px; box-sizing: border-box;">
+        <textarea id="importSetlistText" style="height: 120px; margin-bottom: 8px;" placeholder="Paste text here, e.g.:&#10;-- Friday Gig Set 1 --&#10;1. Will the Circle Be Unbroken (Key: G)&#10;2. Nine Pound Hammer (Key: A)"></textarea>
+        <div class="flex-row">
+          <button onclick="processImportedTextSetlist()">Build Setlist Now</button>
+          <button class="secondary" onclick="toggleImportDrawer()">Cancel</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2 id="currentSetlistTitle">Setlist</h2>
+      <ul id="setlistSongs"></ul>
+      
+      <div class="flex-row" style="margin-top: 15px;">
+        <input type="text" id="songSearchInput" list="songDatalist" placeholder="Type song title to quick add...">
+        <datalist id="songDatalist"></datalist>
+        <button onclick="addSongFromInput()">+ Add to Setlist</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Master Library & Song Editor</h2>
+      <form id="songForm">
+        <input type="hidden" id="songId">
+        <div class="flex-row" style="margin-bottom: 10px;">
+          <input type="text" id="title" placeholder="Song Title" required>
+          <input type="text" id="artist" placeholder="Artist / Traditional">
+          <input type="text" id="originalKey" placeholder="Key (e.g. G)" style="width: 80px;">
+          <select id="timeSignature" style="width: 90px;">
+            <option value="4/4">4/4</option>
+            <option value="3/4">3/4</option>
+            <option value="2/4">2/4</option>
+            <option value="6/8">6/8</option>
+            <option value="12/8">12/8</option>
+            <option value="Cut">Cut</option>
+          </select>
+          <input type="number" id="bpm" placeholder="BPM" style="width: 70px;">
+          <select id="genre">
+            <option value="Bluegrass">Bluegrass</option>
+            <option value="Country">Country</option>
+            <option value="Folk">Folk</option>
+            <option value="Americana">Americana</option>
+            <option value="Rock">Rock</option>
+            <option value="Pop">Pop</option>
+            <option value="Blues">Blues</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+        <div style="margin-bottom: 10px;">
+          <label style="font-size: 12px; color: var(--subtext); display: block; margin-bottom: 6px;">
+            Lyrics & Chords (Use bracket notation like: [G]I was standing by my [G7]window)
+          </label>
+          <textarea id="chordData" placeholder="[G]Enter lyrics with [D7]inline bracket chords..."></textarea>
+        </div>
+        <button type="submit" style="padding: 10px 18px;">Save Song to Master Library</button>
+      </form>
+    </div>
+
+    <div class="card">
+      <div class="flex-row" style="justify-content: space-between; margin-bottom: 15px;">
+        <h2 style="margin: 0;">Master Repertoire Library (A-Z)</h2>
+        <div class="flex-row">
+          <button onclick="exportJSON()">Export Library JSON</button>
+          <button class="secondary" onclick="triggerEmail()">Email Library</button>
+        </div>
+      </div>
+      
+      <div class="flex-row" style="margin-bottom: 12px;">
+        <label><strong>Genre Filter:</strong></label>
+        <select id="genreFilterSelect" onchange="filterLibraryByGenre(this.value)">
+          <option value="ALL">Show All Genres</option>
+          <option value="Bluegrass">Bluegrass</option>
+          <option value="Country">Country</option>
+          <option value="Folk">Folk</option>
+          <option value="Americana">Americana</option>
+          <option value="Rock">Rock</option>
+          <option value="Pop">Pop</option>
+          <option value="Blues">Blues</option>
+          <option value="Other">Other</option>
+        </select>
+        <input type="text" id="libraryFilterInput" onkeyup="renderMasterLibraryCards()" placeholder="Search library songs by title/artist..." style="flex: 1;">
+      </div>
+
+      <ul id="masterLibraryList"></ul>
+    </div>
+  </div>
+
+  <button id="scrollDownBtn" onclick="scrollThreeQuarters()" title="Scroll 75% Viewport">↓</button>
+
+  <script>
+    const NOTES = ["C", "C#", "D", "Eb", "E", "F", "F#", "G", "Ab", "A", "Bb", "B"];
+    let showChords = true;
+    let selectedGenreFilter = "ALL";
+    let activeChartSetlistIndex = null;
+    let draggedIndex = null;
+
+    const STARTER_LIBRARY = [
+      {
+        id: "bg_001",
+        title: "Will the Circle Be Unbroken",
+        artist: "Traditional",
+        originalKey: "G",
+        timeSignature: "4/4",
+        bpm: 110,
+        genre: "Bluegrass",
+        chordData: "[G]I was standing by my [G7]window\nOn a [C]cold and cloudy [G]day\nWhen I saw that hearse come [Em]rolling\nFor to [G]carry my [D7]mother a[G]way",
+        updatedAt: new Date().toISOString()
+      },
+      {
+        id: "bg_002",
+        title: "Nine Pound Hammer",
+        artist: "Bill Monroe",
+        originalKey: "A",
+        timeSignature: "4/4",
+        bpm: 125,
+        genre: "Bluegrass",
+        chordData: "This [A]nine pound hammer is [D]too heavy for my [A]size\nBuddy, [E7]too heavy for my [A]size",
+        updatedAt: new Date().toISOString()
+      }
+    ];
+
+    let state = {
+      library: STARTER_LIBRARY,
+      setlists: [{ id: 'set_1', name: 'Main Rehearsal List', status: 'active', songIds: ['bg_001', 'bg_002'] }],
+      activeSetlistId: 'set_1'
+    };
+
+    async function loadMasterLibrary() {
+      const savedState = localStorage.getItem('band_app_state');
+      if (savedState) {
+        state = JSON.parse(savedState);
+      }
+
+      try {
+        const response = await fetch('master-library.json');
+        if (response.ok) {
+          const remoteLibrary = await response.json();
+          state.library = remoteLibrary;
+          localStorage.setItem('band_app_state', JSON.stringify(state));
+        }
+      } catch (err) {
+        console.log("Could not load master-library.json, using local cache.", err);
+      }
+
+      renderUI();
+    }
+
+    function saveState() {
+      localStorage.setItem('band_app_state', JSON.stringify(state));
+      renderUI();
+    }
+
+    function renderUI() {
+      document.getElementById('genreFilterSelect').value = selectedGenreFilter;
+      renderSetlistDropdown();
+      renderActiveSetlist();
+      renderDatalistOptions();
+      renderMasterLibraryCards();
+      renderArchivedLists();
+    }
+
+    function filterLibraryByGenre(genre) {
+      selectedGenreFilter = genre;
+      renderUI();
+    }
+
+    function getFilteredLibrary() {
+      let lib = state.library;
+      if (selectedGenreFilter !== "ALL") {
+        lib = lib.filter(s => s.genre && s.genre.toLowerCase() === selectedGenreFilter.toLowerCase());
+      }
+      return lib.sort((a, b) => a.title.localeCompare(b.title));
+    }
+
+    // --- Drag & Drop ---
+    function handleDragStart(e) {
+      draggedIndex = Number(e.currentTarget.dataset.index);
+      e.currentTarget.classList.add('dragging');
+      e.dataTransfer.effectAllowed = 'move';
+    }
+
+    function handleDragOver(e) {
+      e.preventDefault();
+      e.dataTransfer.dropEffect = 'move';
+      e.currentTarget.classList.add('drag-over');
+    }
+
+    function handleDragLeave(e) {
+      e.currentTarget.classList.remove('drag-over');
+    }
+
+    function handleDrop(e) {
+      e.preventDefault();
+      e.currentTarget.classList.remove('drag-over');
+      const targetIndex = Number(e.currentTarget.dataset.index);
+
+      if (draggedIndex !== null && draggedIndex !== targetIndex) {
+        const currentSet = state.setlists.find(s => s.id === state.activeSetlistId);
+        if (currentSet) {
+          const movedSong = currentSet.songIds.splice(draggedIndex, 1)[0];
+          currentSet.songIds.splice(targetIndex, 0, movedSong);
+          if (activeChartSetlistIndex === draggedIndex) {
+            activeChartSetlistIndex = targetIndex;
+          }
+          saveState();
+        }
+      }
+    }
+
+    function handleDragEnd(e) {
+      e.currentTarget.classList.remove('dragging');
+      draggedIndex = null;
+    }
+
+    // --- Active Setlist & Inline Chart Display ---
+    function renderActiveSetlist() {
+      const currentSet = state.setlists.find(s => s.id === state.activeSetlistId);
+      document.getElementById('currentSetlistTitle').innerText = currentSet ? currentSet.name : 'Setlist';
+      const listEl = document.getElementById('setlistSongs');
+      listEl.innerHTML = '';
+
+      if (!currentSet) return;
+
+      currentSet.songIds.forEach((id, index) => {
+        const song = state.library.find(s => s.id === id);
+        if (!song) return;
+
+        const isChartOpen = activeChartSetlistIndex === index;
+        const li = document.createElement('li');
+        li.className = `song-item draggable-item ${isChartOpen ? 'active-chart-item' : ''}`;
+        li.draggable = true;
+        li.dataset.index = index;
+
+        li.addEventListener('dragstart', handleDragStart);
+        li.addEventListener('dragover', handleDragOver);
+        li.addEventListener('dragleave', handleDragLeave);
+        li.addEventListener('drop', handleDrop);
+        li.addEventListener('dragend', handleDragEnd);
+
+        li.innerHTML = `
+          <div class="song-meta">
+            <span class="drag-handle">☰</span>
+            <strong>${index + 1}. ${song.title}</strong>
+            ${song.originalKey ? `<span class="badge">Key: ${song.originalKey}</span>` : ''}
+            ${song.timeSignature ? `<span class="badge">${song.timeSignature}</span>` : ''}
+            ${song.genre ? `<span class="badge badge-genre">${song.genre}</span>` : ''}
+          </div>
+          <div>
+            <button onclick="toggleInlineChart(${index})" class="${isChartOpen ? '' : 'secondary'}">
+              ${isChartOpen ? 'Close Chart' : 'View Chart'}
+            </button>
+            <button onclick="editSong('${song.id}')" class="secondary">Edit</button>
+            <button onclick="removeSongFromSetlist(${index})" class="danger">X</button>
+          </div>
+        `;
+        listEl.appendChild(li);
+
+        if (isChartOpen) {
+          const chartBox = createInlineChartElement(index, song, currentSet);
+          listEl.appendChild(chartBox);
+        }
+      });
+    }
+
+    function toggleInlineChart(index) {
+      if (activeChartSetlistIndex === index) {
+        activeChartSetlistIndex = null;
+      } else {
+        activeChartSetlistIndex = index;
+      }
+      renderActiveSetlist();
+    }
+
+    function navigateChart(newIndex) {
+      const currentSet = state.setlists.find(s => s.id === state.activeSetlistId);
+      if (currentSet && newIndex >= 0 && newIndex < currentSet.songIds.length) {
+        activeChartSetlistIndex = newIndex;
+        renderActiveSetlist();
+      }
+    }
+
+    function createInlineChartElement(index, song, currentSet) {
+      const container = document.createElement('div');
+      container.className = 'inline-chart-container';
+
+      const prevSong = index > 0 ? state.library.find(s => s.id === currentSet.songIds[index - 1]) : null;
+      const nextSong = index < currentSet.songIds.length - 1 ? state.library.find(s => s.id === currentSet.songIds[index + 1]) : null;
+
+      const prevLabel = prevSong ? `← Previous Song (${prevSong.title})` : `← Previous Song`;
+      const nextLabel = nextSong ? `Next Song (${nextSong.title}) →` : `Next Song →`;
+
+      container.innerHTML = `
+        <div class="flex-row" style="justify-content: space-between; margin-bottom: 10px; border-bottom: 1px solid #333; padding-bottom: 8px;">
+          <button class="secondary" onclick="navigateChart(${index - 1})" ${!prevSong ? 'disabled' : ''}>${prevLabel}</button>
+          <div class="flex-row">
+            <label>Transpose Key:</label>
+            <select id="inlineTransposeSelect" onchange="renderInlineChartBody('${song.id}')"></select>
+            <button class="secondary" onclick="toggleChordsInline('${song.id}')" id="inlineToggleChordsBtn">${showChords ? 'Hide Chords' : 'Show Chords'}</button>
+          </div>
+        </div>
+
+        <div id="inlineChartOutput" class="chart-view"></div>
+
+        <div class="flex-row" style="justify-content: space-between; margin-top: 10px; border-top: 1px solid #333; padding-top: 8px;">
+          <button class="secondary" onclick="toggleInlineChart(${index})">Close Chart</button>
+          <button onclick="navigateChart(${index + 1})" ${!nextSong ? 'disabled' : ''}>${nextLabel}</button>
+        </div>
+      `;
+
+      setTimeout(() => {
+        const transSelect = document.getElementById('inlineTransposeSelect');
+        if (transSelect) {
+          transSelect.innerHTML = '';
+          NOTES.forEach(note => {
+            const opt = document.createElement('option');
+            opt.value = note;
+            opt.innerText = note;
+            if (note.toLowerCase() === (song.originalKey || 'C').toLowerCase()) opt.selected = true;
+            transSelect.appendChild(opt);
+          });
+          renderInlineChartBody(song.id);
+        }
+      }, 0);
+
+      return container;
+    }
+
+    function renderInlineChartBody(songId) {
+      const song = state.library.find(s => s.id === songId);
+      if (!song) return;
+
+      const transSelect = document.getElementById('inlineTransposeSelect');
+      const targetKey = transSelect ? transSelect.value : (song.originalKey || 'C');
+      const origKey = song.originalKey || 'C';
+      
+      const semitones = getSemitoneDistance(origKey, targetKey);
+      const rawText = song.chordData || 'No chords or lyrics entered yet.';
+
+      const outputEl = document.getElementById('inlineChartOutput');
+      if (!outputEl) return;
+      outputEl.innerHTML = '';
+
+      if (!showChords) {
+        outputEl.classList.add('chords-hidden');
+      } else {
+        outputEl.classList.remove('chords-hidden');
+      }
+
+      const lines = rawText.split('\n');
+      lines.forEach(line => {
+        const hasChords = /\[(.*?)\]/.test(line);
+
+        if (!hasChords) {
+          const plainDiv = document.createElement('div');
+          plainDiv.className = 'plain-line';
+          plainDiv.innerText = line || ' ';
+          outputEl.appendChild(plainDiv);
+        } else {
+          const lineDiv = document.createElement('div');
+          lineDiv.className = 'chord-line';
+
+          const regex = /(?:\[(.*?)\])?([^\[]*)/g;
+          let match;
+
+          while ((match = regex.exec(line)) !== null) {
+            if (match[0] === '') break;
+
+            const rawChord = match[1] || '';
+            const word = match[2] || '';
+            const transposedChord = rawChord ? transposeChordString(rawChord, semitones) : '';
+
+            const pairDiv = document.createElement('div');
+            pairDiv.className = 'chord-pair';
+            pairDiv.innerHTML = `
+              <span class="chord">${transposedChord}</span>
+              <span class="lyric">${word}</span>
+            `;
+            lineDiv.appendChild(pairDiv);
+          }
+          outputEl.appendChild(lineDiv);
+        }
+      });
+    }
+
+    function toggleChordsInline(songId) {
+      showChords = !showChords;
+      const btn = document.getElementById('inlineToggleChordsBtn');
+      if (btn) btn.innerText = showChords ? 'Hide Chords' : 'Show Chords';
+      renderInlineChartBody(songId);
+    }
+
+    // --- Search & Datalist ---
+    function renderDatalistOptions() {
+      const datalist = document.getElementById('songDatalist');
+      datalist.innerHTML = '';
+      getFilteredLibrary().forEach(s => {
+        const opt = document.createElement('option');
+        opt.value = s.title;
+        datalist.appendChild(opt);
+      });
+    }
+
+    function addSongFromInput() {
+      const input = document.getElementById('songSearchInput');
+      const titleVal = input.value.trim();
+      if (!titleVal) return;
+
+      const song = state.library.find(s => s.title.toLowerCase() === titleVal.toLowerCase());
+      if (song) {
+        addSongToSetlist(song.id);
+        input.value = '';
+      } else {
+        alert("Song not found in library. Save it to the Master Library below first!");
+      }
+    }
+
+    // --- Master Library Feed ---
+    function renderMasterLibraryCards() {
+      const listEl = document.getElementById('masterLibraryList');
+      const searchFilter = document.getElementById('libraryFilterInput').value.toLowerCase();
+      listEl.innerHTML = '';
+
+      let songs = getFilteredLibrary();
+      if (searchFilter) {
+        songs = songs.filter(s => s.title.toLowerCase().includes(searchFilter) || (s.artist && s.artist.toLowerCase().includes(searchFilter)));
+      }
+
+      if (songs.length === 0) {
+        listEl.innerHTML = '<li style="color: var(--subtext); padding: 10px;">No matching songs found in library.</li>';
+        return;
+      }
+
+      songs.forEach(song => {
+        const li = document.createElement('li');
+        li.className = 'song-item';
+        li.innerHTML = `
+          <div class="song-meta">
+            <strong>${song.title}</strong>
+            <span class="badge">${song.artist || 'Traditional'}</span>
+            ${song.originalKey ? `<span class="badge">Key: ${song.originalKey}</span>` : ''}
+            ${song.timeSignature ? `<span class="badge">${song.timeSignature}</span>` : ''}
+            ${song.genre ? `<span class="badge badge-genre">${song.genre}</span>` : ''}
+          </div>
+          <div>
+            <button onclick="addSongToSetlist('${song.id}')">+ Add to Setlist</button>
+            <button onclick="editSong('${song.id}')" class="secondary">Edit</button>
+            <button onclick="deleteSongFromLibrary('${song.id}')" class="danger">Delete</button>
+          </div>
+        `;
+        listEl.appendChild(li);
+      });
+    }
+
+    function deleteSongFromLibrary(id) {
+      const song = state.library.find(s => s.id === id);
+      if (!song) return;
+
+      if (confirm(`Are you sure you want to permanently delete "${song.title}" from your Master Library?`)) {
+        // Remove from Master Library
+        state.library = state.library.filter(s => s.id !== id);
+
+        // Remove from all setlists where it was added
+        state.setlists.forEach(setlist => {
+          setlist.songIds = setlist.songIds.filter(songId => songId !== id);
+        });
+
+        activeChartSetlistIndex = null;
+        saveState();
+      }
+    }
+
+    // --- Setlist Controls, Archive & Text Import Management ---
+    function renderSetlistDropdown() {
+      const select = document.getElementById('setlistSelect');
+      select.innerHTML = '';
+      const activeLists = state.setlists.filter(s => s.status !== 'archived');
+      activeLists.forEach(s => {
+        const opt = document.createElement('option');
+        opt.value = s.id;
+        opt.innerText = s.name;
+        opt.selected = s.id === state.activeSetlistId;
+        select.appendChild(opt);
+      });
+    }
+
+    function switchSetlist(id) {
+      state.activeSetlistId = id;
+      activeChartSetlistIndex = null;
+      saveState();
+    }
+
+    function createNewSetlist() {
+      const name = prompt("Enter Venue/Event and Date:");
+      if (!name) return;
+      const newSet = { id: 'set_' + Date.now(), name, status: 'active', songIds: [] };
+      state.setlists.push(newSet);
+      state.activeSetlistId = newSet.id;
+      activeChartSetlistIndex = null;
+      saveState();
+    }
+
+    function archiveCurrentSetlist() {
+      const current = state.setlists.find(s => s.id === state.activeSetlistId);
+      if (current) {
+        current.status = 'archived';
+        const remaining = state.setlists.filter(s => s.status !== 'archived');
+        if (remaining.length === 0) {
+          const freshSet = { id: 'set_' + Date.now(), name: 'New Setlist', status: 'active', songIds: [] };
+          state.setlists.push(freshSet);
+          state.activeSetlistId = freshSet.id;
+        } else {
+          state.activeSetlistId = remaining[0].id;
+        }
+        activeChartSetlistIndex = null;
+        saveState();
+      }
+    }
+
+    function toggleArchiveDrawer() {
+      const drawer = document.getElementById('archiveDrawer');
+      drawer.style.display = drawer.style.display === 'none' ? 'block' : 'none';
+    }
+
+    function toggleImportDrawer() {
+      const drawer = document.getElementById('importDrawer');
+      drawer.style.display = drawer.style.display === 'none' ? 'block' : 'none';
+    }
+
+    function processImportedTextSetlist() {
+      const text = document.getElementById('importSetlistText').value;
+      let setlistName = document.getElementById('importSetlistName').value.trim();
+
+      if (!text.trim()) {
+        alert("Please paste text to import.");
+        return;
+      }
+
+      const lines = text.split('\n');
+      const matchedSongIds = [];
+      const unmatchedTitles = [];
+
+      lines.forEach(line => {
+        let cleaned = line.trim();
+        if (!cleaned) return;
+
+        if (cleaned.startsWith('--') && cleaned.endsWith('--')) {
+          if (!setlistName) {
+            setlistName = cleaned.replace(/--/g, '').trim();
+          }
+          return;
+        }
+
+        cleaned = cleaned.replace(/^\d+[\.\)\-]\s*/, '');
+        cleaned = cleaned.replace(/\s*[\(\[].*?[\)\]]/g, '').trim();
+
+        if (!cleaned) return;
+
+        const found = state.library.find(s => s.title.toLowerCase() === cleaned.toLowerCase());
+        if (found) {
+          matchedSongIds.push(found.id);
+        } else {
+          unmatchedTitles.push(cleaned);
+        }
+      });
+
+      if (matchedSongIds.length === 0) {
+        alert("No matching songs were found in your Master Library for this text.");
+        return;
+      }
+
+      const newSetName = setlistName || `Imported Setlist (${new Date().toLocaleDateString()})`;
+      const newSet = { id: 'set_' + Date.now(), name: newSetName, status: 'active', songIds: matchedSongIds };
+      
+      state.setlists.push(newSet);
+      state.activeSetlistId = newSet.id;
+      activeChartSetlistIndex = null;
+
+      document.getElementById('importSetlistText').value = '';
+      document.getElementById('importSetlistName').value = '';
+      toggleImportDrawer();
+
+      saveState();
+
+      if (unmatchedTitles.length > 0) {
+        alert(`Setlist imported! ${matchedSongIds.length} songs added.\n\nThe following ${unmatchedTitles.length} songs weren't found in your Master Library:\n- ${unmatchedTitles.join('\n- ')}`);
+      }
+    }
+
+    function renderArchivedLists() {
+      const container = document.getElementById('archivedListsContainer');
+      container.innerHTML = '';
+      const archived = state.setlists.filter(s => s.status === 'archived');
+
+      if (archived.length === 0) {
+        container.innerHTML = '<span style="color: var(--subtext); font-size: 13px;">No archived setlists found.</span>';
+        return;
+      }
+
+      archived.forEach(set => {
+        const btn = document.createElement('button');
+        btn.className = 'secondary';
+        btn.innerText = `Unarchive "${set.name}"`;
+        btn.onclick = () => restoreSetlist(set.id);
+        container.appendChild(btn);
+      });
+    }
+
+    function restoreSetlist(id) {
+      const set = state.setlists.find(s => s.id === id);
+      if (set) {
+        set.status = 'active';
+        state.activeSetlistId = set.id;
+        saveState();
+      }
+    }
+
+    function addSongToSetlist(songId) {
+      const currentSet = state.setlists.find(s => s.id === state.activeSetlistId);
+      if (currentSet) {
+        currentSet.songIds.push(songId);
+        saveState();
+      }
+    }
+
+    function removeSongFromSetlist(index) {
+      const currentSet = state.setlists.find(s => s.id === state.activeSetlistId);
+      currentSet.songIds.splice(index, 1);
+      if (activeChartSetlistIndex === index) {
+        activeChartSetlistIndex = null;
+      } else if (activeChartSetlistIndex > index) {
+        activeChartSetlistIndex--;
+      }
+      saveState();
+    }
+
+    // --- Editor Controls ---
+    document.getElementById('songForm').addEventListener('submit', (e) => {
+      e.preventDefault();
+      const id = document.getElementById('songId').value || 'song_' + Math.random().toString(36).substr(2, 9);
+      const songData = {
+        id,
+        title: document.getElementById('title').value,
+        artist: document.getElementById('artist').value,
+        originalKey: document.getElementById('originalKey').value,
+        timeSignature: document.getElementById('timeSignature').value,
+        bpm: document.getElementById('bpm').value,
+        genre: document.getElementById('genre').value,
+        chordData: document.getElementById('chordData').value,
+        updatedAt: new Date().toISOString()
+      };
+
+      const existingIndex = state.library.findIndex(s => s.id === id);
+      if (existingIndex > -1) {
+        state.library[existingIndex] = songData;
+      } else {
+        state.library.push(songData);
+      }
+
+      document.getElementById('songForm').reset();
+      document.getElementById('songId').value = '';
+      saveState();
+    });
+
+    function editSong(id) {
+      const song = state.library.find(s => s.id === id);
+      if (!song) return;
+      document.getElementById('songId').value = song.id;
+      document.getElementById('title').value = song.title;
+      document.getElementById('artist').value = song.artist || '';
+      document.getElementById('originalKey').value = song.originalKey || '';
+      document.getElementById('timeSignature').value = song.timeSignature || '4/4';
+      document.getElementById('bpm').value = song.bpm || '';
+      document.getElementById('genre').value = song.genre || 'Bluegrass';
+      document.getElementById('chordData').value = song.chordData || '';
+      window.scrollTo({ top: document.getElementById('songForm').offsetTop - 20, behavior: 'smooth' });
+    }
+
+    // --- Helpers ---
+    function getSemitoneDistance(fromKey, toKey) {
+      const fromIdx = NOTES.findIndex(n => n.toLowerCase() === fromKey.toLowerCase());
+      const toIdx = NOTES.findIndex(n => n.toLowerCase() === toKey.toLowerCase());
+      if (fromIdx === -1 || toIdx === -1) return 0;
+      return (toIdx - fromIdx + 12) % 12;
+    }
+
+    function transposeChordString(chordStr, semitones) {
+      return chordStr.replace(/[A-G][b#]?/g, (match) => {
+        let index = NOTES.findIndex(n => n.toLowerCase() === match.toLowerCase());
+        if (index === -1) return match;
+        let newIndex = (index + semitones + 12) % 12;
+        return NOTES[newIndex];
+      });
+    }
+
+    function scrollThreeQuarters() {
+      const scrollAmount = window.innerHeight * 0.75;
+      window.scrollBy({ top: scrollAmount, behavior: 'smooth' });
+    }
+
+    function copySetlistAsText() {
+      const currentSet = state.setlists.find(s => s.id === state.activeSetlistId);
+      if (!currentSet) return;
+      
+      let text = `-- ${currentSet.name} --\n`;
+      currentSet.songIds.forEach((id, index) => {
+        const song = state.library.find(s => s.id === id);
+        if (song) {
+          text += `${index + 1}. ${song.title}${song.originalKey ? ` (Key: ${song.originalKey})` : ''}${song.timeSignature ? ` [${song.timeSignature}]` : ''}\n`;
+        }
+      });
+
+      navigator.clipboard.writeText(text);
+      alert("Setlist copied to clipboard!");
+    }
+
+    function exportJSON() {
+      const dateStr = new Date().toISOString().slice(0, 10);
+      const blob = new Blob([JSON.stringify(state.library, null, 2)], { type: 'application/json' });
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(blob);
+      a.download = `master_library_${dateStr}.json`;
+      a.click();
+    }
+
+    function triggerEmail() {
+      window.location.href = `mailto:?subject=Library%20Update&body=Attached%20is%20my%20latest%20library%20JSON.`;
+    }
+
+    // Boot Up: Fetch Master File first, then render UI
+    loadMasterLibrary();
+  </script>
+</body>
+</html>
