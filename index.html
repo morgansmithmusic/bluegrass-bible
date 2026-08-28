@@ -38,7 +38,6 @@
     }
     input[type="text"], textarea { flex: 1; min-width: 180px; }
     
-    /* Expanded Editor Textarea */
     textarea { 
       width: 100%; 
       height: 450px; 
@@ -60,7 +59,6 @@
     button.danger { background: #900; color: #fff; }
     button:disabled { opacity: 0.3; cursor: not-allowed; }
 
-    /* Setlist Drag & Drop Items */
     ul { list-style: none; padding: 0; margin: 0; }
     li.song-item { 
       background: #282828; 
@@ -91,7 +89,6 @@
       background: #2c3839;
     }
 
-    /* Inline Chart Container Styling */
     .inline-chart-container {
       background: #181818;
       border: 1px solid var(--accent);
@@ -100,7 +97,6 @@
       margin-bottom: 12px;
     }
 
-    /* Ultra-Compact Chart Formatting */
     .chart-view { 
       background: #000; 
       padding: 12px 15px; 
@@ -149,7 +145,6 @@
     .badge-genre { background: #004d40; color: #80cbc4; }
     .drag-handle { cursor: grab; color: var(--subtext); margin-right: 8px; font-weight: bold; }
 
-    /* Floating Scroll Button */
     #scrollDownBtn {
       position: fixed;
       bottom: 20px;
@@ -255,7 +250,7 @@
       <div class="flex-row" style="justify-content: space-between; margin-bottom: 15px;">
         <h2 style="margin: 0;">Master Repertoire Library (A-Z)</h2>
         <div class="flex-row">
-          <button onclick="exportJSON()">Export Library JSON</button>
+          <button onclick="exportJSON()" style="border: 2px solid #fff;">Download Setlist & Library JSON</button>
           <button class="secondary" onclick="triggerEmail()">Email Library</button>
         </div>
       </div>
@@ -288,6 +283,7 @@
     let selectedGenreFilter = "ALL";
     let activeChartSetlistIndex = null;
     let draggedIndex = null;
+    let hasUnsavedChanges = false;
 
     const STARTER_LIBRARY = [
       {
@@ -320,6 +316,15 @@
       activeSetlistId: 'set_1'
     };
 
+    // Prompt user before closing tab if there are unsaved edits
+    window.addEventListener('beforeunload', (e) => {
+      if (hasUnsavedChanges) {
+        e.preventDefault();
+        e.returnValue = 'You have unsaved changes to your setlists or library. Download JSON to preserve changes for the band!';
+        return e.returnValue;
+      }
+    });
+
     async function loadMasterLibrary() {
       const savedState = localStorage.getItem('band_app_state');
       if (savedState) {
@@ -329,8 +334,17 @@
       try {
         const response = await fetch('master-library.json');
         if (response.ok) {
-          const remoteLibrary = await response.json();
-          state.library = remoteLibrary;
+          const remoteData = await response.json();
+          
+          if (remoteData.library) {
+            state.library = remoteData.library;
+            if (remoteData.setlists && remoteData.setlists.length > 0) {
+              state.setlists = remoteData.setlists;
+              state.activeSetlistId = remoteData.setlists[0].id;
+            }
+          } else if (Array.isArray(remoteData)) {
+            state.library = remoteData;
+          }
           localStorage.setItem('band_app_state', JSON.stringify(state));
         }
       } catch (err) {
@@ -340,7 +354,10 @@
       renderUI();
     }
 
-    function saveState() {
+    function saveState(markDirty = true) {
+      if (markDirty) {
+        hasUnsavedChanges = true;
+      }
       localStorage.setItem('band_app_state', JSON.stringify(state));
       renderUI();
     }
@@ -458,11 +475,7 @@
     }
 
     function toggleInlineChart(index) {
-      if (activeChartSetlistIndex === index) {
-        activeChartSetlistIndex = null;
-      } else {
-        activeChartSetlistIndex = index;
-      }
+      activeChartSetlistIndex = (activeChartSetlistIndex === index) ? null : index;
       renderActiveSetlist();
     }
 
@@ -584,7 +597,6 @@
       renderInlineChartBody(songId);
     }
 
-    // --- Search & Datalist ---
     function renderDatalistOptions() {
       const datalist = document.getElementById('songDatalist');
       datalist.innerHTML = '';
@@ -609,7 +621,6 @@
       }
     }
 
-    // --- Master Library Feed ---
     function renderMasterLibraryCards() {
       const listEl = document.getElementById('masterLibraryList');
       const searchFilter = document.getElementById('libraryFilterInput').value.toLowerCase();
@@ -651,20 +662,15 @@
       if (!song) return;
 
       if (confirm(`Are you sure you want to permanently delete "${song.title}" from your Master Library?`)) {
-        // Remove from Master Library
         state.library = state.library.filter(s => s.id !== id);
-
-        // Remove from all setlists where it was added
         state.setlists.forEach(setlist => {
           setlist.songIds = setlist.songIds.filter(songId => songId !== id);
         });
-
         activeChartSetlistIndex = null;
         saveState();
       }
     }
 
-    // --- Setlist Controls, Archive & Text Import Management ---
     function renderSetlistDropdown() {
       const select = document.getElementById('setlistSelect');
       select.innerHTML = '';
@@ -828,7 +834,6 @@
       saveState();
     }
 
-    // --- Editor Controls ---
     document.getElementById('songForm').addEventListener('submit', (e) => {
       e.preventDefault();
       const id = document.getElementById('songId').value || 'song_' + Math.random().toString(36).substr(2, 9);
@@ -870,7 +875,6 @@
       window.scrollTo({ top: document.getElementById('songForm').offsetTop - 20, behavior: 'smooth' });
     }
 
-    // --- Helpers ---
     function getSemitoneDistance(fromKey, toKey) {
       const fromIdx = NOTES.findIndex(n => n.toLowerCase() === fromKey.toLowerCase());
       const toIdx = NOTES.findIndex(n => n.toLowerCase() === toKey.toLowerCase());
@@ -909,19 +913,24 @@
     }
 
     function exportJSON() {
-      const dateStr = new Date().toISOString().slice(0, 10);
-      const blob = new Blob([JSON.stringify(state.library, null, 2)], { type: 'application/json' });
+      const exportObject = {
+        setlists: state.setlists,
+        library: state.library
+      };
+
+      const blob = new Blob([JSON.stringify(exportObject, null, 2)], { type: 'application/json' });
       const a = document.createElement('a');
       a.href = URL.createObjectURL(blob);
-      a.download = `master_library_${dateStr}.json`;
+      a.download = `master-library.json`;
       a.click();
+
+      hasUnsavedChanges = false;
     }
 
     function triggerEmail() {
-      window.location.href = `mailto:?subject=Library%20Update&body=Attached%20is%20my%20latest%20library%20JSON.`;
+      window.location.href = `mailto:?subject=Library%20and%20Setlist%20Update&body=Attached%20is%20the%20latest%20master-library.json%20file.`;
     }
 
-    // Boot Up: Fetch Master File first, then render UI
     loadMasterLibrary();
   </script>
 </body>
