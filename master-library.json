@@ -164,7 +164,18 @@
       "id": "set_1787929490742",
       "name": "U District Sept 11",
       "status": "active",
-      "songIds": []
+      "songIds": [
+        "song_wrqc6hqoe",
+        "song_x0s2hvd25",
+        "song_x02bfwmpe",
+        "song_toij53sbd",
+        "song_bor02alej",
+        "song_ob9fg5qbl",
+        "song_13iboti8e",
+        "song_2js25u0hy",
+        "song_88l30ddxj",
+        "song_fd4duxyz9"
+      ]
     }
   ],
   "library": [
@@ -289,6 +300,18 @@
       "spotifyUrl": "https://open.spotify.com/search/Amarillo%20By%20Morning%20George%20Strait"
     },
     {
+      "id": "song_bor02alej",
+      "title": "Angeline The Baker",
+      "artist": "",
+      "spotifyUrl": "https://open.spotify.com/search/Angeline%20The%20Baker",
+      "originalKey": "",
+      "timeSignature": "4/4",
+      "bpm": "",
+      "genre": "Bluegrass",
+      "chordData": "Angeline the baker, lives on the village green\nThe way I always loved her, beats all you've ever seen\nAngeline the baker, Angeline I know\nShould have married Angeline, twenty years ago\n\nAngeline the baker, age of 43\nFed her sugar candy, but she still won't marry me\nAngeline the baker, Angeline I know\nShould have married Angeline, just twenty years ago\n\nHer father was a baker, his name was Uncle Sam\nI never can forget her, no matter where I am\nShe said couldn't do hard work, because she is not stout\nBaked biscuits every day and poured the coffee out\n\nI bought Angeline a brand new dress, neither black nor brown\nIt was the colour of a stormy skies, before the rain came down\nSixteen horses in my team, the leader he was blind\nI dreamed that I was dying, I saw my Angeline",
+      "updatedAt": "2026-08-28T15:52:01.267Z"
+    },
+    {
       "id": "song_mab9ysq2o",
       "title": "Better Class Of Losers",
       "artist": "Randy Travis",
@@ -313,6 +336,18 @@
       "updatedAt": "2026-08-28T14:33:29.384Z"
     },
     {
+      "id": "song_ndtajhc6n",
+      "title": "Big Sciota",
+      "artist": "Fiddle Tune",
+      "spotifyUrl": "https://open.spotify.com/search/Big%20Sciota%20Fiddle%20Tune",
+      "originalKey": "G",
+      "timeSignature": "4/4",
+      "bpm": "",
+      "genre": "Bluegrass",
+      "chordData": "",
+      "updatedAt": "2026-08-28T15:58:02.165Z"
+    },
+    {
       "id": "song_erzv9mioc",
       "title": "Big Spike Hammer",
       "artist": "",
@@ -323,6 +358,18 @@
       "genre": "Bluegrass",
       "chordData": "\nCan’t you hear the whistle of my big spike hammer\nLord it’s busting my side\nI’ve done all I can do to keep that woman happy\nStill she’s not satisfied\n\n   Hey hey Della Mae\n   Why do you treat me this way\n   Hey hey Della Mae\n   I’ll get even some day\n\nI’m the best hammer swinger on this big section gang\nBig Bill Johnson is my name\nLord this hammer that I swing for a dollar and a half a day\nI’ll all for my Della Mae\n\nNow I’ve been lots of places, not much I ain’t done\nThere’s still alot of things I’d like to see\nLord this hammer that I swing or the woman that I love\nYes, one’s gonna be the death of me\n\n",
       "updatedAt": "2026-08-28T15:05:09.069Z"
+    },
+    {
+      "id": "song_pk1rzzqme",
+      "title": "Blackberry Blossom",
+      "artist": "Fiddle Tune",
+      "spotifyUrl": "https://open.spotify.com/search/Blackberry%20Blossom%20Fiddle%20Tune",
+      "originalKey": "G",
+      "timeSignature": "4/4",
+      "bpm": "",
+      "genre": "Bluegrass",
+      "chordData": "",
+      "updatedAt": "2026-08-28T16:01:13.012Z"
     },
     {
       "id": "song_jnhv03f4n",
@@ -455,6 +502,18 @@
       "genre": "Bluegrass",
       "chordData": "\nLord I been hangin’ out of town in that low down rain\nWatchin’ good time Charlie friend is drivin’ me insane\nDown on shady Charlotte Street the green lights look red\nWish I was back home on the farm in my feather bed.\n\n   Get myself a rockin’ chair\n   To see if I can lose\n   Them thin dime hard times\n   Hell on Church Street blues.\n\nFound myself a picker friend who’s read yesterday’s news\nFolded up page twenty-one and stuck it in my shoe\nGave a nickle to the poor my good turn for the day\nFolded up my own little folder threw it far away.\n\nLord I wish I had some guitar strings Old Black Diamond brand\nI’d string up this old Martin box and go and join some band\nBut I guess I’ll just stay right here just pick and sing a while\nTry to make me a little change and give them folks a smile.\n\n",
       "updatedAt": "2026-08-28T15:10:02.977Z"
+    },
+    {
+      "id": "song_b9d5kum8d",
+      "title": "Clinch Mountain Backstep",
+      "artist": "Fiddle Tune",
+      "spotifyUrl": "https://open.spotify.com/search/Clinch%20Mountain%20Backstep%20Fiddle%20Tune",
+      "originalKey": "A",
+      "timeSignature": "4/4",
+      "bpm": "",
+      "genre": "Bluegrass",
+      "chordData": "",
+      "updatedAt": "2026-08-28T16:01:35.941Z"
     },
     {
       "id": "song_3ot7ai82p",
@@ -1033,6 +1092,30 @@
       "updatedAt": "2026-08-28T15:43:01.665Z"
     },
     {
+      "id": "song_7kcvjqxn1",
+      "title": "Itzbin Reel",
+      "artist": "Fiddle Tune",
+      "spotifyUrl": "https://open.spotify.com/search/Itzbin%20Reel%20Fiddle%20Tune",
+      "originalKey": "A",
+      "timeSignature": "4/4",
+      "bpm": "",
+      "genre": "Bluegrass",
+      "chordData": "",
+      "updatedAt": "2026-08-28T16:01:24.641Z"
+    },
+    {
+      "id": "song_fm8vomnnp",
+      "title": "Jerusalem Ridge",
+      "artist": "Fiddle Tune",
+      "spotifyUrl": "https://open.spotify.com/search/Jerusalem%20Ridge%20Fiddle%20Tune",
+      "originalKey": "Am",
+      "timeSignature": "4/4",
+      "bpm": "",
+      "genre": "Bluegrass",
+      "chordData": "",
+      "updatedAt": "2026-08-28T15:57:51.424Z"
+    },
+    {
       "id": "song_mlz2azfdp",
       "title": "Lay Down My Old Guitar",
       "artist": "",
@@ -1201,6 +1284,18 @@
       "spotifyUrl": "https://open.spotify.com/search/Neon%20Moon%20Brooks%20and%20Dunn"
     },
     {
+      "id": "song_88odh3vpk",
+      "title": "New River Train",
+      "artist": "",
+      "spotifyUrl": "https://open.spotify.com/search/New%20River%20Train",
+      "originalKey": "",
+      "timeSignature": "4/4",
+      "bpm": "",
+      "genre": "Bluegrass",
+      "chordData": "   I’m riding on that New River Train\n   I’m riding on that New River Train\n   That same old train that brought me here\n   Is gonna carry me away again\n\nDarling you can’t love one\nDarling you can’t love one\nYou can’t love one and have any fun\nOh darling you can’t love one\n\nDarling you can’t love two\nDarling you can’t love two\nYou can’t love two and your little heart be true\nOh darling you can’t love two\n\nDarling you can’t love three\nDarling you can’t love three\nYou can’t love three and still love me\nOh darling you can’t love three\n\nDarling you can’t love four\nDarling you can’t love four\nYou can’t love four and love me anymore\nOh darling you can’t love four",
+      "updatedAt": "2026-08-28T15:50:51.239Z"
+    },
+    {
       "id": "bg_002",
       "title": "Nine Pound Hammer",
       "artist": "Bill Monroe",
@@ -1234,6 +1329,18 @@
       "chordData": "",
       "updatedAt": "2026-08-28T01:23:18.049Z",
       "spotifyUrl": "https://open.spotify.com/search/Not%20Long%20For%20This%20Barstool%20Morgan%20Smith"
+    },
+    {
+      "id": "song_x0s2hvd25",
+      "title": "Old Dangerfield",
+      "artist": "Fiddle Tune",
+      "spotifyUrl": "https://open.spotify.com/search/Old%20Dangerfield%20Fiddle%20Tune",
+      "originalKey": "A",
+      "timeSignature": "4/4",
+      "bpm": "",
+      "genre": "Bluegrass",
+      "chordData": "",
+      "updatedAt": "2026-08-28T15:57:41.418Z"
     },
     {
       "id": "song_093zipcok",
@@ -1343,6 +1450,30 @@
       "updatedAt": "2026-08-28T15:25:22.163Z"
     },
     {
+      "id": "song_zs9maxzax",
+      "title": "Rebecca",
+      "artist": "Fiddle Tune",
+      "spotifyUrl": "https://open.spotify.com/search/Rebecca%20Fiddle%20Tune",
+      "originalKey": "B",
+      "timeSignature": "4/4",
+      "bpm": "",
+      "genre": "Bluegrass",
+      "chordData": "",
+      "updatedAt": "2026-08-28T16:00:11.333Z"
+    },
+    {
+      "id": "song_zkgkdtwqk",
+      "title": "Red Haired Boy",
+      "artist": "Fiddle Tune",
+      "spotifyUrl": "https://open.spotify.com/search/Red%20Haired%20Boy%20Fiddle%20Tune",
+      "originalKey": "A",
+      "timeSignature": "4/4",
+      "bpm": "",
+      "genre": "Bluegrass",
+      "chordData": "",
+      "updatedAt": "2026-08-28T16:00:59.032Z"
+    },
+    {
       "id": "song_88l30ddxj",
       "title": "Reuben's Train",
       "artist": "",
@@ -1391,6 +1522,30 @@
       "updatedAt": "2026-08-28T15:25:49.030Z"
     },
     {
+      "id": "song_hr85z2dgc",
+      "title": "Roving Gambler",
+      "artist": "",
+      "spotifyUrl": "https://open.spotify.com/search/Roving%20Gambler",
+      "originalKey": "",
+      "timeSignature": "4/4",
+      "bpm": "",
+      "genre": "Bluegrass",
+      "chordData": "I am a roving gambler gambled all around\nWhenever I meet with a deck of cards\nI lay my money down\nLay my money down, lay my money down\n\nI had not been in Frisco many more weeks than three\nI met up with a pretty little gal\nShe fell in love with me\nFell in love with me, fell in love with me\n\nShe took me in her parlor, cooled me with her fan\nWhispered low in her mother’s ear\nI love this gambling man\nLove this gambling man, love this gambling man\n\nOh daughter oh dear daughter how can you treat me so\nLeave your dear old mother\nAnd with a gambler go\nWith a gambler go, with a gambler go\n\nMy mother oh my mother you can not understand\nIf you ever see me a coming back\nI’ll be with a gambling man\nWith a gambling man, with a gambling man\n\nI left her there in Frisco and I wound up in Maine\nI met up with a gambling man\nGot in a poker game\nGot in a poker game, got in a poker game\n\nWe put our money in the pot and dealt the cards around\nI saw him deal from the bottom of the deck\nAnd I shot that gambler down\nShot the gambler down, shot the gambler down\n\nWell, now I’m in the jailhouse got a number for my name\nThe Warden said as he locked the door\nYou’ve gambled your last game\nGambled your last game, gambled your last game",
+      "updatedAt": "2026-08-28T15:56:53.889Z"
+    },
+    {
+      "id": "song_5j15qklpp",
+      "title": "Saint Anne's Reel",
+      "artist": "Fiddle Tune",
+      "spotifyUrl": "https://open.spotify.com/search/Saint%20Anne's%20Reel%20Fiddle%20Tune",
+      "originalKey": "D",
+      "timeSignature": "4/4",
+      "bpm": "",
+      "genre": "Bluegrass",
+      "chordData": "",
+      "updatedAt": "2026-08-28T16:00:22.749Z"
+    },
+    {
       "id": "song_fd4duxyz9",
       "title": "Shady Grove",
       "artist": "",
@@ -1437,6 +1592,18 @@
       "genre": "Bluegrass",
       "chordData": "\nIt was in the spring one sunny day\nMy good gal left me Lord she went away\n\n   And now she’s gone but I don’t worry\n   ‘Cause I’m sitting on top of the world\n\nShe called me up from down in El paso\nSaid come back, daddy, Lord I need you so\n\nAshes to ashes, dust to dust\nShow me a woman a man can trust\n\nMississippi River, long, deep and wide\nThe woman I’m loving is on the other side\n\nYou don’t like my peaches, don’t you shake my tree\nGet out of my orchard, let my peaches be\n\nDon’t you come here running, holding out your hand\nI’ll get me a woman like you got your man\n",
       "updatedAt": "2026-08-28T15:26:21.379Z"
+    },
+    {
+      "id": "song_c5z5nmnre",
+      "title": "Sitting Alone In The Moonlight",
+      "artist": "",
+      "spotifyUrl": "https://open.spotify.com/search/Sitting%20Alone%20In%20The%20Moonlight",
+      "originalKey": "",
+      "timeSignature": "3/4",
+      "bpm": "",
+      "genre": "Bluegrass",
+      "chordData": "Sitting alone in the moonlight\nThinking of the days gone by\nWondering about my darling\nI can still hear her saying goodbye\n\n   Oh the moon grows pale as I sit here\n   Each little star seems to whisper and say\n   Your sweetheart has found another\n   And now she’s far far away",
+      "updatedAt": "2026-08-28T15:55:57.973Z"
     },
     {
       "id": "song_v84b7a61c",
@@ -1666,6 +1833,30 @@
       "spotifyUrl": "https://open.spotify.com/search/Watermelon%20Crawl%20Tracy%20Byrd"
     },
     {
+      "id": "song_lhzlboem9",
+      "title": "Where The Soul Of A Man Never Dies",
+      "artist": "",
+      "spotifyUrl": "https://open.spotify.com/search/Where%20The%20Soul%20Of%20A%20Man%20Never%20Dies",
+      "originalKey": "",
+      "timeSignature": "4/4",
+      "bpm": "",
+      "genre": "Bluegrass",
+      "chordData": "To Canaan’s land I’m on my way\nWhere the soul (of man) never dies\nMy darkest night will turn to day\nWhere the soul (of man) never dies\n\n   (lead)\n   No sad farewells\n   No tear dimmed eyes\n   Where all is love\n   And the soul never dies\n\n   (tenor)\n   Dear friends there’ll be no sad farewells\n   There’ll be no tear-dimmed eyes\n   Where all is peace and joy and love\n   And the soul of man never dies\n\nThe rose is blooming there for me\nWhere the soul (of man) never dies\nAnd I will spend eternity\nWhere the soul (of man) never dies\n\nThe love light beams across the foam\nWhere the soul (of man) never dies\nIt shines and lights the way to home\nWhere the soul (of man) never dies\n\nMy life will end in deathless sleep\nWhere the soul (of man) never dies\nAnd everlasting joys I’ll reap\nWhere the soul (of man) never dies\n\nI’m on my way to that fair land\nWhere the soul (of man) never dies\nWhere there will be no parting hand\nWhere the soul (of man) never dies",
+      "updatedAt": "2026-08-28T15:50:29.226Z"
+    },
+    {
+      "id": "song_6mhb7nzar",
+      "title": "Whiskey Before Breakfast",
+      "artist": "Fiddle Tune",
+      "spotifyUrl": "https://open.spotify.com/search/Whiskey%20Before%20Breakfast%20Fiddle%20Tune",
+      "originalKey": "D",
+      "timeSignature": "4/4",
+      "bpm": "",
+      "genre": "Bluegrass",
+      "chordData": "",
+      "updatedAt": "2026-08-28T16:00:36.120Z"
+    },
+    {
       "id": "song_yor1hjk2i",
       "title": "Whiskey Bent and Hellbound",
       "artist": "Hank WIlliams Jr",
@@ -1676,6 +1867,18 @@
       "genre": "Country",
       "chordData": "I've got a good woman at home who thinks I do no wrong\nBut sometimes, Lord, she just ain't always around\nAnd you know that's when I fall I can't help myself at all\nAnd I get whiskey bent and hell bound\n\nPlay me some songs about a ramblin' man\nPut a cold one in my hand\n'Cause you know I love to hear those guitar sounds\nDon't you play \"I'm So Lonesome I Could Cry\"\n'Cause I'll get all balled up inside\nAnd I'll get whiskey bent and hell bound\n\nSure enough about closin' time, 'bout stoned out of my mind\nAnd I end up with some honky-tonk special I found\nJust as sure as the morning sun comes\nThinking of my sweet girl at home\nAnd I need to get whiskey bent and hell bound\n\nPlay me the songs about a ramblin' man\nPut old Jim Beam in my hand\n'Cause you know I still love to get drunk and hear country sounds\nBut don't play \"Your Cheatin' Heart\"\n'Cause that'll tear me all apart\nI get whiskey bent and hell bound\nYeah, old Hank's songs always make me feel low down\n",
       "updatedAt": "2026-08-28T15:01:12.640Z"
+    },
+    {
+      "id": "song_x02bfwmpe",
+      "title": "White Freightliner",
+      "artist": "",
+      "spotifyUrl": "https://open.spotify.com/search/White%20Freightliner",
+      "originalKey": "B",
+      "timeSignature": "4/4",
+      "bpm": "",
+      "genre": "Bluegrass",
+      "chordData": "I’m goin’ out on that highway listen to them big trucks whine\nI’m goin’ out on that highway listen to them big trucks whine\nOh white Freightliner won’t you steal away my mind\n\nThere’s bad new from Huston half my friends have died\nThere’s bad new from Huston half my friends have died\nOh white Freightliner won’t you steal away my mind\n\nNew Mexico ain’t bad lord people there treat you kind\nNew Mexico ain’t bad lord people there they treat you kind\nOh white Freightliner won’t you steal away my mind\n\nIf you see Miss Caroline tell her I'm doin fine\nIf you see Miss Caroline tell her I'm doin fine\nOh white Freightliner won't you steal away my mind\n\nOh lord I’m gonna ramble ’til I get back to where I came\nOh lord I’m gonna ramble ’til I get back to where I came\nOh white Freightliner won’t you steal away my brain",
+      "updatedAt": "2026-08-28T15:54:15.650Z"
     },
     {
       "id": "song_208r642iw",
