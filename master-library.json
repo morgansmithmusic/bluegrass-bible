@@ -1,5 +1,5 @@
 {
-  "activeSetlistId": "set_1787929490742",
+  "activeSetlistId": "set_1787878570621",
   "setlists": [
     {
       "id": "set_1",
@@ -399,13 +399,13 @@
       "id": "song_bc7kmcdia",
       "title": "Blue Slough",
       "artist": "Morgan Smith",
+      "spotifyUrl": "https://open.spotify.com/search/Blue%20Slough%20Morgan%20Smith",
       "originalKey": "C#m",
       "timeSignature": "3/4",
       "bpm": "",
       "genre": "Country",
-      "chordData": "",
-      "updatedAt": "2026-08-28T01:21:59.288Z",
-      "spotifyUrl": "https://open.spotify.com/search/Blue%20Slough%20Morgan%20Smith"
+      "chordData": "[Form:]\n[C#m--|E--|A--|E--]\n[E--|E--|B--|B--]\n[C#m--|E--|A--|E--]\n[E--|B--|E--|E--]\n\nUp the road, up the hill\njust a mile maybe two\nLies a fisher man's own dream come true\nYou can hook em just as fast as\nYou can cast your line through\nIt's a muddy little creek called blue slough\n\nOn the day that we wed\nwe made a promise and a vow\nAnother's love you would never allow\nI came home from the creek\nto find you running around\nI guess words never meant much anyhow\n\nBlue slough, blue slough\nWhat's a country boy to do\nWhen he finds his woman untrue\nHe took his forty-four\nand he shot his lovers through\nNow they're sleeping on the bed of blue slough\n\nUp the road, up the hill\njust a mile maybe two\nlies a killer-man's own dream come true\nthey'll never find what you bury\non that reedy bayou\nit's a muddy little creek called blue slough",
+      "updatedAt": "2026-08-28T21:03:04.329Z"
     },
     {
       "id": "song_9xz5mjfcu",
@@ -471,13 +471,13 @@
       "id": "song_hqzlyastu",
       "title": "Chattahoochee",
       "artist": "Alan Jackson",
+      "spotifyUrl": "https://open.spotify.com/search/Chattahoochee%20Alan%20Jackson",
       "originalKey": "C",
       "timeSignature": "4/4",
       "bpm": "88",
       "genre": "Country",
-      "chordData": "Well, way down yonder on the Chattahoochee\nIt gets hotter than a hoochie coochie\nWe laid rubber on the Georgia asphalt\nWe got a little crazy but we never got caught\n\nDown by the river on a Friday night\nPyramid of cans in the pale moonlight\nTalking about cars and dreaming about women\nNever had a plan just a living for the minute\n\nYeah, way down yonder on the Chattahoochee\nNever knew how much that muddy water meant to me\nBut I learned how to swim and I learned who I was\nA lot about living and a little 'bout love', aw haw\n\nWell, we fogged up the windows in my old Chevy\nI was willing but she wasn't ready\nSo I settled for a burger and a grape snow cone\nDropped her off early but I didn't go home\n\nDown by the river on a Friday night\nA pyramid of cans in the pale moonlight\nTalking about cars and dreaming about women\nNever had a plan just a living for the minute\n\nYeah, way down yonder on the Chattahoochee\nNever knew how much that muddy water meant to me\nBut I learned how to swim and I learned who I was\nA lot about living and a little 'bout love (yeh-hi)\n\nYeah, way down yonder on the Chattahoochee\nNever knew how much that muddy water meant to me\nBut I learned how to swim and I learned who I was\nA lot about living and a little 'bout love\nA lot about living and a little 'bout love\nYeah-hoo!\nThat's right",
-      "updatedAt": "2026-08-28T01:37:12.823Z",
-      "spotifyUrl": "https://open.spotify.com/search/Chattahoochee%20Alan%20Jackson"
+      "chordData": "Well, [C]way down yonder on the Chattahoochee\nIt gets hotter than a [G]hoochie [C]coochie\nWe laid rubber on the Georgia asphalt\nWe got a little crazy but we [G]never got [C]caught\n\n[F]Down by the river on a Friday night\n[C]Pyramid of cans in the [G]pale [C]moonlight\n[F]Talking about cars and dreaming about women\n[D]Never had a plan just a [G]living for the minute\n\nYeah, way down yonder on the Chattahoochee\nNever knew how much that muddy water meant to me\nBut I learned how to swim and I learned who I was\nA lot about living and a little 'bout love', aw haw\n\n[Intro lick]\nWell, we fogged up the windows in my old Chevy\nI was willing but she wasn't ready\nSo I settled for a burger and a grape snow cone\nDropped her off early but I didn't go home\n\nDown by the river on a Friday night\nA pyramid of cans in the pale moonlight\nTalking about cars and dreaming about women\nNever had a plan just a living for the minute\n\nYeah, way down yonder on the Chattahoochee\nNever knew how much that muddy water meant to me\nBut I learned how to swim and I learned who I was\nA lot about living and a little 'bout love (yeh-hi)\n\nSolo\n[F---|C-GC|F---|D-G-|--]\n[F---|C-GC|F---|D-G-|--]\n\nYeah, way down yonder on the Chattahoochee\nNever knew how much that muddy water meant to me\nBut I learned how to swim and I learned who I was\nA lot about living and a little 'bout love\nA lot about living and a little 'bout love\nYeah-hoo!\nThat's right",
+      "updatedAt": "2026-08-28T20:47:11.824Z"
     },
     {
       "id": "song_7ylrfu4hy",
@@ -675,13 +675,13 @@
       "id": "song_qbud8p00p",
       "title": "Fast As You",
       "artist": "Dwight Yoakam",
+      "spotifyUrl": "https://open.spotify.com/search/Fast%20As%20You%20Dwight%20Yoakam",
       "originalKey": "E",
       "timeSignature": "4/4",
       "bpm": "128",
       "genre": "Country",
-      "chordData": "Maybe someday I'll be strong\nMaybe it won't be long\nI'll be the one who's tough\nYou'll be the one who's got it rough\nIt won't be long and maybe I'll be real strong\n\nMaybe I'll do things right\nMaybe I'll start tonight\nYou'll learn to cry like me\nBaby, let's just wait and see\nMaybe I'll start tonight and do things right\n\nYou'll control me, oh, so boldly\nRule me 'til I'm free\n'Til the pain that shakes me finally makes me\nGet up off of my knees\nYeah-yeah-yeah-yeah\n\nMaybe I'll be fast as you\nMaybe I'll break hearts too\nBut I think that you'll slow down\nWhen your turn to hurt comes around\nMaybe I'll break hearts and be as fast as you\n\nAhh\n\nYou'll control me, oh, so boldly\nRule me 'til I'm free\n'Til the pain that shakes me finally makes me\nGet up off of my knees\nYeah-yeah-yeah-yeah\n\nMaybe I'll be fast as you\nMaybe I'll break hearts too\nBut I think that you'll slow down\nWhen your turn to hurt comes around\nMaybe I'll break hearts and be as fast as you\nMaybe I'll break hearts and be as fast as you\n\nOh, suckie\n(Electric only)\n(Solo x2)\n\nMaybe someday I'll be strong\nMaybe it won't be long\nI'll be the one that's tough\nYou'll be the one who's got it rough\nYou're gonna learn to cry like me\nBaby, let's just wait and see\nYeah, maybe I'll be fast as you\nMaybe I'll break hearts too",
-      "updatedAt": "2026-08-28T01:33:55.964Z",
-      "spotifyUrl": "https://open.spotify.com/search/Fast%20As%20You%20Dwight%20Yoakam"
+      "chordData": "[E]Maybe someday I'll be strong\nMaybe it won't be long\n[A]I'll be the one who's tough\n[E]You'll be the one who's got it rough\n[F#m]It won't be long and [A]maybe I'll be real [E]strong\n\nMaybe I'll do things right\nMaybe I'll start tonight\nYou'll learn to cry like me\nBaby, let's just wait and see\nMaybe I'll start tonight and do things right\n\n[A]You'll control me, oh, so boldly\n[E]Rule me 'til I'm free\n[A]'Til the pain that shakes me finally makes me\n[B]Get up off of my knees\nYeah-yeah-yeah-yeah\n\nMaybe I'll be fast as you\nMaybe I'll break hearts too\nBut I think that you'll slow down\nWhen your turn to hurt comes around\nMaybe I'll break hearts and be as fast as you\n\nAhh\n\nYou'll control me, oh, so boldly\nRule me 'til I'm free\n'Til the pain that shakes me finally makes me\nGet up off of my knees\nYeah-yeah-yeah-yeah\n\nMaybe I'll be fast as you\nMaybe I'll break hearts too\nBut I think that you'll slow down\nWhen your turn to hurt comes around\nMaybe I'll break hearts and be as fast as you\nMaybe I'll break hearts and be as fast as you\n\nOh, suckie\n(Electric only)\n(Solo x2)\n\nMaybe someday I'll be strong\nMaybe it won't be long\nI'll be the one that's tough\nYou'll be the one who's got it rough\nYou're gonna learn to cry like me\nBaby, let's just wait and see\nYeah, maybe I'll be fast as you\nMaybe I'll break hearts too",
+      "updatedAt": "2026-08-28T20:43:52.909Z"
     },
     {
       "id": "song_zz3289hdm",
@@ -711,13 +711,13 @@
       "id": "song_7itz6xzuu",
       "title": "Forever and Ever, Amen",
       "artist": "Randy Travis",
+      "spotifyUrl": "https://open.spotify.com/search/Forever%20and%20Ever%2C%20Amen%20Randy%20Travis",
       "originalKey": "D",
       "timeSignature": "4/4",
       "bpm": "92",
       "genre": "Country",
-      "chordData": "You may think that I'm talkin' foolish\nYou've heard that I'm wild and I'm free\nYou may wonder how I can promise you now\nThis love that I feel for you always will be\nBut you're not just time that I'm killin'\nI'm no longer one of those guys\nAs sure as I live, this love that I give\nIs gonna be yours until the day that I die\n\nOh, baby, I'm gonna love you forever\nForever and ever amen\nAs long as old men sit and talk about the weather\nAs long as old women sit and talk about old men\nIf you wonder how long I'll be faithful\nI'll be happy to tell you again\nI'm gonna love you forever and ever\nForever and ever, amen\n\nThey say time takes its toll on a body\nMakes the young girls brown hair turn gray\nBut honey, I don't care, I ain't in love with your hair\nAnd if it all fell out, well, I'd love you anyway\nThey say time can play tricks on a memory\nMake people forget things they knew\nWell, it's easy to see, it's happenin' to me\nI've already forgotten every woman but you\n\nOh, darlin', I'm gonna love you forever\nForever and ever amen\nAs long as old men sit and talk about the weather\nAs long as old women sit and talk about old men\nIf you wonder how long I'll be faithful\nWell, just listen to how this song ends\nI'm gonna love you forever and ever\nForever and ever, amen\nI'm gonna love you forever and ever\nForever and ever, forever and ever\nForever and ever, amen",
-      "updatedAt": "2026-08-28T01:39:31.784Z",
-      "spotifyUrl": "https://open.spotify.com/search/Forever%20and%20Ever%2C%20Amen%20Randy%20Travis"
+      "chordData": "You [D]may think that [G]I'm talkin' [D]foolish\nYou've [G]heard that I'm wild and I'm [D]free\nYou [G]may wonder how I can [D]promise you now\nThis [E]love that I feel for you [A]always will be\nBut [D]you're not just [G]time that I'm [D]killin'\nI'm [G]no longer one of those [D]guys\nAs [G]sure as I live, this [D]love that I give\nIs [E]gonna be yours until the [A]day that I die\n\nOh, baby, [D]I'm gonna [G]love you [D]forever\nFor[G]ever and ever [D]amen\nAs [G]long as old men sit and [D]talk about the weather\nAs [E]long as old women sit and [A]talk about old men\nIf you [D]wonder how [G]long I'll be [D]faithful\nI'll be [G]happy to tell you [E]again\n[G]I'm gonna [A]love you for[D]ever and [G]ever\nFor[E]ever and [A]ever, [D]amen\n\nThey say time takes its toll on a body\nMakes the young girls brown hair turn gray\nBut honey, I don't care, I ain't in love with your hair\nAnd if it all fell out, well, I'd love you anyway\nThey say time can play tricks on a memory\nMake people forget things they knew\nWell, it's easy to see, it's happenin' to me\nI've already forgotten every woman but you\n\nOh, darlin', I'm gonna love you forever\nForever and ever amen\nAs long as old men sit and talk about the weather\nAs long as old women sit and talk about old men\nIf you wonder how long I'll be faithful\nWell, just listen to how this song ends\n[G]I'm gonna [A]love you for[D]ever and [G]ever\nFor[E]ever and [A]ever, a[D]men\n[G]I'm gonna [A]love you for[D]ever and [G]ever\nFor[E]ever and [A]ever, for[Bm]ever and [G]ever\nFor[E]ever and [A]ever, amen",
+      "updatedAt": "2026-08-29T16:45:36.230Z"
     },
     {
       "id": "song_e72bh67k8",
@@ -783,13 +783,13 @@
       "id": "song_qllb7isar",
       "title": "Good Hearted Woman",
       "artist": "Merle Haggard",
+      "spotifyUrl": "https://open.spotify.com/search/Good%20Hearted%20Woman%20Merle%20Haggard",
       "originalKey": "D",
       "timeSignature": "4/4",
       "bpm": "103",
       "genre": "Country",
-      "chordData": "Well, a long time forgotten\nDreams have just fell by the way\nAnd the good life he promised\nAin't what she's living today\nBut she never complains of the bad times\nOr bad things he's done\nShe just talks about the good times they've had\nAnd all the good times to come.\n\nShe's a good-hearted woman in love with a good-timin' man\nShe loves him in spite of his wicked ways\nShe don't understand\nThrough teardrops and laughter,\nThey'll pass through this world hand in hand,\nShe's a good-hearted woman loving a good-timin' man.\n\nHe likes the bright light, the nite life\nAnd good-timin' friends\nWhen the party's all over\nShe'll welcome him back home again\nShe don't understand him,\nBut she does the best that she can\nThis good-hearted woman\nLovin' a good-timin' man.\n\nShe's a good-hearted woman in love with a good-timin' man\nShe loves me in spite of my wicked ways\nShe don't understand\nThrough teardrops and laughter,\nThey'll pass through this world hand in hand,\nShe's a good-hearted woman loving a good-timin' man.\nShe's a good-hearted woman loving a good-timin' man.",
-      "updatedAt": "2026-08-28T01:54:49.068Z",
-      "spotifyUrl": "https://open.spotify.com/search/Good%20Hearted%20Woman%20Merle%20Haggard"
+      "chordData": "Well, a [D]long time forgotten\nDreams have just fell by the [G]way\nAnd the [A]good life he promised\nAin't what she's living [D]today\n[D]But she never complains of the bad times\nOr bad things he's [G]done, Lord\nShe just [A]talks about the good times they've had\nAnd all the good times to [D]come.\n\n[D]She's a good-hearted woman in love with a good-timin' [G]man\nShe [A]loves him in spite of his wicked ways\nShe don't [D]understand\n[D]Through teardrops and laughter,\nThey'll pass through this world hand in [G]hand,\nShe's a [A]good-hearted woman loving a good-timin' [D]man.\n\nHe likes the bright light, the nite life\nAnd good-timin' friends\nWhen the party's all over\nShe'll welcome him back home again\nShe don't understand him,\nBut she does the best that she can\nThis good-hearted woman\nLovin' a good-timin' man.\n\nShe's a [E]good-hearted woman in love with a good-timin' [A]man\nShe [B]loves me in spite of my wicked ways\nShe don't [E]understand\nThrough [E]teardrops and laughter,\nThey'll pass through this world hand in [A]hand,\nShe's a [B]good-hearted woman loving a good-timin' [E]man.\nShe's a [B]good-hearted woman loving a good-timin' [E]man.",
+      "updatedAt": "2026-08-29T16:27:44.570Z"
     },
     {
       "id": "song_43mq37mlc",
@@ -819,13 +819,13 @@
       "id": "song_207mbee63",
       "title": "Hey Good Lookin",
       "artist": "Hank Williams",
+      "spotifyUrl": "https://open.spotify.com/search/Hey%20Good%20Lookin%20Hank%20Williams",
       "originalKey": "C",
       "timeSignature": "4/4",
       "bpm": "72",
       "genre": "Country",
-      "chordData": "Say hey, good lookin', what you got cookin'?\nHow's about cookin' somethin' up with me?\nHey, sweet baby, don't you think maybe\nWe could find us a brand-new recipe?\nI got a hot rod Ford, and a two dollar bill\nAnd I know a spot right over the hill\nThere's soda pop and the dancing's free\nSo if you wanna have fun, come along with me\nSay hey, good lookin', what you got cookin'\nHow's about cookin' somethin' up with me?\n\nI'm free and ready, so we can go steady\nHow's about savin' all your time for me?\nNo more lookin', I know I've been token\nHow's about keepin' steady company?\nI'm gonna throw my date book over the fence\nAnd find me one for five or ten cents\nI'll keep it 'til it's covered with age\n'Cause I'm writin' your name down on every page\nSay hey, good lookin', whatcha got cookin'?\nHow's about cookin' somethin' up with me?",
-      "updatedAt": "2026-08-28T01:37:52.633Z",
-      "spotifyUrl": "https://open.spotify.com/search/Hey%20Good%20Lookin%20Hank%20Williams"
+      "chordData": "[Intro: D-G-|C---]\n\n[Form:]\n[A part: C---|C---|D-G-|C--- x2]\n[B part: F-C-|F-C-|F-C-|D-G- x1]\n[A part again]\n\nSay hey, good lookin', what you got cookin'?\nHow's about cookin' somethin' up with me?\nHey, sweet baby, don't you think maybe\nWe could find us a brand-new recipe?\nI got a hot rod Ford, and a two dollar bill\nAnd I know a spot right over the hill\nThere's soda pop and the dancing's free\nSo if you wanna have fun, come along with me\nSay hey, good lookin', what you got cookin'\nHow's about cookin' somethin' up with me?\n\n[Solo over form]\n\nI'm free and ready, so we can go steady\nHow's about savin' all your time for me?\nNo more lookin', I know I've been token\nHow's about keepin' steady company?\nI'm gonna throw my date book over the fence\nAnd find me one for five or ten cents\nI'll keep it 'til it's covered with age\n'Cause I'm writin' your name down on every page\nSay hey, good lookin', whatcha got cookin'?\nHow's about cookin' somethin' up with me?",
+      "updatedAt": "2026-08-28T20:53:23.352Z"
     },
     {
       "id": "song_y8wls5lzx",
@@ -1035,13 +1035,13 @@
       "id": "song_2kqh2vd4y",
       "title": "If I Could Make A Living Out Of Loving You",
       "artist": "",
+      "spotifyUrl": "https://open.spotify.com/search/If%20I%20Could%20Make%20A%20Living%20Out%20Of%20Loving%20You",
       "originalKey": "F->G->A",
       "timeSignature": "4/4",
       "bpm": "78",
       "genre": "Country",
-      "chordData": "If I could make a livin out of lovin you\nI'd be a millionaire in a week or two\nI'd be doin what I love and lovin what I do\nIf I could make a million out of lovin you\n\nEarly in the morning when the sun comes up\nI'm punchin that clock on the wall\nBreakin my back just to make a few bucks\nWishin I was in your arms\n\nI could work all day and feel right at home\nLovin that eight to five\nAnd I'd never have to leave you here alone\nWhile I'm workin over time",
-      "updatedAt": "2026-08-28T01:48:18.151Z",
-      "spotifyUrl": "https://open.spotify.com/search/If%20I%20Could%20Make%20A%20Living%20Out%20Of%20Loving%20You"
+      "chordData": "   If [F]I could make a livin out of [Bb]lovin [F]you\n   I'd [F]be a millionaire in a [C]week or [F]two\n   I'd be [F]doin what I love and [Bb]lovin what I [F]do\n   If [F]I could make a million out of [C]lovin [F]you [stay on F until verse]\n\n[Bb]Early in the morning when the [F]sun comes up\nI'm [C]punchin that clock on the [F]wall\n[Bb]Breakin my back just to [F]make a few bucks\n[G]Wishin I was in your [C]arms\n\nChorus\nSolo [|F---|Bb-F-|F---|C-F-|x2]\n\n[Bb]I could work all day and feel [F]right at home\n[C]Lovin that eight to [F]five\nAnd I'd [Bb]never have to leave you [F]here alone\nWhile I'm [C]workin over [F]time\n\nChorus\nSolo\n\nKey change\nIn G:\nIf [G]I could make a livin out of [C]lovin [G]you\nI'd [G]be a millionaire in a [D]week or [G]two\nI'd be [G]doin what I love and [C]lovin what I [G]do\nIf [G]I could make a million out of [D]lovin [G]you [straigt to A]\n\nIn A:\nIf [A]I could make a livin out of [D]lovin [A]you\nI'd [A]be a millionaire in a [E]week or [A]two\nI'd be [A]doin what I love and [D]lovin what I [A]do\nIf [A]I could make a million out of [E]lovin [A]you\n\n",
+      "updatedAt": "2026-08-29T17:04:34.105Z"
     },
     {
       "id": "song_6eh7fx74y",
@@ -1322,13 +1322,13 @@
       "id": "song_g1agqlbg0",
       "title": "Not Long For This Barstool",
       "artist": "Morgan Smith",
+      "spotifyUrl": "https://open.spotify.com/search/Not%20Long%20For%20This%20Barstool%20Morgan%20Smith",
       "originalKey": "A",
       "timeSignature": "4/4",
       "bpm": "120",
       "genre": "Country",
-      "chordData": "",
-      "updatedAt": "2026-08-28T01:23:18.049Z",
-      "spotifyUrl": "https://open.spotify.com/search/Not%20Long%20For%20This%20Barstool%20Morgan%20Smith"
+      "chordData": "[A]Hey bartender, [D]pour me a [A]glass\nOf whatever you've got on [E]tap\n[A]No thank you ma'am, I'm [D]one and [A]done\nThere's no need to [E]open a [A]tab\n\nI'm not long for this [C]barstool\n[D]I can't stay and I should [A]proba[Ab]bly get [F#m]home\nI only came in for [C]one beer\n[D]I've worked all day and I'm [A]tired down to the [A7]bone\nY'all have been [C]real good [D]company\nBut I've gotta [A]go when I [Ab]finish this [F#m]drink\nI'm not long for this [C]barstool\nWell [D]okay, maybe just one [A]more [D] [A]\n\nHey pretty lady, you just walked in\nBut I can tell by the look in your eyes\nYou're in need of some company and\nI think I could stay for a while, but\n\nI'm not long for this barstool\nI can't stay and I should probably get home\nI only came in for one beer\nI've worked all day and I'm tired down to the bone\nY'all have been real good company\nBut I've gotta go when I finish this drink\nI'm not long for this barstool\nWell okay, maybe just one more\nSolo\n\nBridge\nOne [F#m]game of pool turned into [E]two then three\nI didn't [D]see that [E]pretty girl [A]leave\nBut I [F#m]knew the trouble [E]I was in\nWhen someone [D]started the karao[E]ke [E7 and stop]\n\nI've stayed too long on this barstool\nThey took my keys and I'll have to walk myself home\nI only came in for one beer\nAnd now I've had five, six, seven, eight more\nY'all have been real great company\nBut if I have one more I'm gonna fall asleep\nI'm not long for this barstool\nWell okay, I'll fall asleep on the floor\n",
+      "updatedAt": "2026-08-28T21:10:12.885Z"
     },
     {
       "id": "song_x0s2hvd25",
@@ -1406,12 +1406,13 @@
       "id": "song_pn2xp0a0h",
       "title": "Pickup Man",
       "artist": "Joe Diffe",
+      "spotifyUrl": "https://open.spotify.com/search/Pickup%20Man%20Joe%20Diffe",
       "originalKey": "G",
+      "timeSignature": "4/4",
       "bpm": "72",
       "genre": "Country",
-      "chordData": "Verse 1\n\nWell, I got my first truck, when I was three\nDrove a hundred thousand miles on my knees\nHauled marbles and rocks, and thought twice before\nI hauled a Barbie Doll bed for the girl next door\nShe tried to pay me with a kiss and I began to understand\nThere's just something women like about a Pickup Man\n(1 measure)\nWhen I turned 16, I saved a few hundred bucks\nMy first car was a Pickup Truck\nI was cruisin' the town and the first girl I seen\nWas Bobbie Jo Gentry, the homecoming queen\nShe flagged me down and climbed up in the cab, and said\n\"I never knew you were a Pickup Man!\"\n\nChorus\nYou can set my truck on fire, roll it down a hill\nBut I still wouldn't trade it for a Coupe DeVille\nI got an eight-foot bed that never has to be made\nYou know if it weren't for trucks, we wouldn't have tailgates\nI met all my wives in traffic jams\nThere's just something women like about a Pickup Man\n\nVerse 2\nMost Friday nights, I can be found\nIn the back of my truck on an old chaise lounge\nBacked into my spot at the drive-in show\nYou know a cargo light gives off a romantic glow\nI never have to wait in line at the popcorn stand\nThere's just something women like about a Pickup Man\n\nChorus\nSolo\n\nA bucket of rust, or a brand-new machine\nOnce around the block and you'll know what I mean\n\nChorus",
-      "updatedAt": "2026-08-28T01:03:25.804Z",
-      "spotifyUrl": "https://open.spotify.com/search/Pickup%20Man%20Joe%20Diffe"
+      "chordData": "Verse 1\n\nWell, I [G]got my first truck, when I was three\nDrove a hundred thousand miles [D]on my [G]knees\nHauled [C]marbles and rocks, and thought twice before\nI hauled a [G]Barbie Doll bed for the girl next door\nShe tried to [D]pay me with a kiss and I began to understand\nThere's just [G]something women like about a [NC]Pickup Man [G]\n(1 measure)\nWhen I [G]turned 16, I saved a few hundred bucks\nMy first car was a [D]Pickup [G]Truck\nI was [C]cruisin' the town and the first girl I seen\nWas [G]Bobbie Jo Gentry, the homecoming queen\nShe [D]flagged me down and climbed up in the cab, and said\n[G]\"I never knew you were a Pickup Man!\"\n\nChorus\nYou can [C]set my truck on fire, roll it down a hill\nBut I [G]still wouldn't trade it for a Coupe DeVille\nI got an [C]eight-foot bed that never has to be made\nYou know [D]if it weren't for trucks, we wouldn't have tailgates\nI met [C]all my wives in traffic jams\nThere's just [G]something women like about a [D]Pickup [G]Man\n\nVerse 2\nMost Friday nights, I can be found\nIn the back of my truck on an old chaise lounge\nBacked into my spot at the drive-in show\nYou know a cargo light gives off a romantic glow\nI never have to wait in line at the popcorn stand\nThere's just something women like about a Pickup Man\n\nChorus\nSolo\n[C G C D]\n\nA [C]bucket of rust, or a brand-new machine\n[D]Once around the block and you'll know what I mean\n\nChorus",
+      "updatedAt": "2026-08-28T20:42:41.097Z"
     },
     {
       "id": "song_3xmpryspz",
@@ -1429,13 +1430,13 @@
       "id": "song_u0k1war53",
       "title": "Quarter In My Pocket",
       "artist": "",
+      "spotifyUrl": "https://open.spotify.com/search/Quarter%20In%20My%20Pocket",
       "originalKey": "G",
       "timeSignature": "4/4",
       "bpm": "82",
       "genre": "Country",
-      "chordData": "I got a quarter in my pocket\nWon't you tell me what I should do?\nShould I put it in the phone\nSo I can come crawlin' home to you?\nOr should I put it in the jukebox\nAnd play another heartbreak song?\nWell, I'm leanin' towards the latter\nAnd I really hate bein' alone\n\nGonna flip it in the air\nGonna watch it fly\nIf it's heads, I might love again\nIf it's tails, I'll cry\n\nHere I am again\nOn the same old stool\nWith the same old question at hand\nAnd the mind of a fool",
-      "updatedAt": "2026-08-28T01:54:32.939Z",
-      "spotifyUrl": "https://open.spotify.com/search/Quarter%20In%20My%20Pocket"
+      "chordData": "[E]\n\n[NC]I got a quarter in my pocket\nWon't you tell me what I should [B]do?\nShould I put it in the phone\nSo I can come crawlin' home to [E]you?\nOr should I put it in the jukebox\nAnd play another heartbreak [A]song?\nWell, I'm [B]leanin' towards the latter\nAnd I really hate bein' [A]alone\n\nGonna flip it in the [B]air\nGonna watch it [E]fly\nIf it's [A]heads, I might love [B]again\nIf it's tails, I'll [E]cry\n\nHere I am [B]again\nOn the same old [E]stool\nWith the [A]same old question at hand\nAnd the [B]mind of a [E]fool",
+      "updatedAt": "2026-08-28T21:14:46.929Z"
     },
     {
       "id": "song_24dbmfgpo",
@@ -1573,13 +1574,13 @@
       "id": "song_yftbcqfds",
       "title": "Should've Been A Cowboy",
       "artist": "",
+      "spotifyUrl": "https://open.spotify.com/search/Should've%20Been%20A%20Cowboy",
       "originalKey": "G",
       "timeSignature": "4/4",
       "bpm": "134",
       "genre": "Country",
-      "chordData": "I bet you never heard ol' Marshall Dillon say\n\"Miss Kitty, have you ever thought of runnin' away?\nSettlin' down, would you marry me?\nIf I ask you twice and beg you pretty please?\"\nShe'd have said yes in a New York minute\nThey never tied the knot, his heart wasn't in it\nHe just stole a kiss as he rode away\nHe never hung his hat up at Kitty's place\n\nI should've been a cowboy, I should've learned to rope and ride\nWearin' my six-shooter, ridin' my pony on a cattle drive\nStealin' the young girls' hearts, just like Gene and Roy\nSingin' those campfire songs, oh, I should've been a cowboy\n\nI might've had a sidekick with a funny name\nRunning wild through the hills chasing Jesse James\nEnding up on the brink of danger\nRiding shotgun for the Texas Rangers\nGo west, young man, haven't you been told?\nCalifornia's full of whiskey, women and gold\nSleepin' out all night beneath the desert stars\nWith a dream in my eye and a prayer in my heart\n\nI should've been a cowboy, I should've learned to rope and ride\nWearin' my six-shooter, ridin' my pony on a cattle drive\nStealin' the young girls' hearts, just like Gene and Roy\nSingin' those campfire songs, oh, I should've been a cowboy\n\nI should've been a cowboy, I should've learned to rope and ride\nI'd be wearin' my six-shooter, ridin' my pony on a cattle drive\nStealin' the young girls' hearts, just like Gene and Roy\nSingin' those campfire songs, oh, I should've been a cowboy\n\nYeah, I should've been a cowboy\nI should've been a cowboy",
-      "updatedAt": "2026-08-28T01:37:36.361Z",
-      "spotifyUrl": "https://open.spotify.com/search/Should've%20Been%20A%20Cowboy"
+      "chordData": "[G--D|D---|C--D|D---  x4]\n\nI bet you [G]never [D]heard ol' [C]Marshall [D]Dillon [G]say\n\"Miss [D]Kitty, have you [C]ever thought of [D]runnin' away? [Continue with similar]\nSettlin' down, would you marry me?\nIf I ask you twice and beg you pretty please?\"\nShe'd have said yes in a New York minute\nThey never tied the knot, his heart wasn't in it\nHe just stole a kiss as he rode away\n[G]He never [D]hung his [C stay here]hat up at Kitty's place\n\nI should've been a cowboy, I should've learned to rope and ride\nWearin' my six-shooter, ridin' my pony on a cattle drive\nStealin' the young girls' hearts, just like Gene and Roy\nSingin' those campfire songs, oh, I should've been a [rhythmic hit]cow-boy\n\nI might've had a sidekick with a funny name\nRunning wild through the hills chasing Jesse James\nEnding up on the brink of danger\nRiding shotgun for the Texas Rangers\nGo west, young man, haven't you been told?\nCalifornia's full of whiskey, women and gold\nSleepin' out all night beneath the desert stars\nWith a dream in my eye and a [Stay on C]prayer in my heart\n\nI should've been a cowboy, I should've learned to rope and ride\nWearin' my six-shooter, ridin' my pony on a cattle drive\nStealin' the young girls' hearts, just like Gene and Roy\nSingin' those campfire songs, oh, I should've been a cowboy\n\nI should've been a cowboy, I should've learned to rope and ride\nI'd be wearin' my six-shooter, ridin' my pony on a cattle drive\nStealin' the young girls' hearts, just like Gene and Roy\nSingin' those campfire songs, oh, I should've been a cowboy\n\nYeah, I should've been a cowboy\nI should've been a cowboy",
+      "updatedAt": "2026-08-28T20:51:04.828Z"
     },
     {
       "id": "song_2js25u0hy",
@@ -1621,13 +1622,13 @@
       "id": "song_2fjv3rr1m",
       "title": "Sold - The Grundy County Auction Incident",
       "artist": "",
+      "spotifyUrl": "https://open.spotify.com/search/Sold%20-%20The%20Grundy%20County%20Auction%20Incident",
       "originalKey": "A",
       "timeSignature": "4/4",
       "bpm": "115",
       "genre": "Country",
-      "chordData": "Well I went down to the Grundy County Auction\nWhere I saw somethin' I just had to have\nMy mind told me I should proceed with caution\nBut my heart said go ahead and make a bid on that\n\nAnd I said, \"Hey, pretty lady! Won't you gimme a sign?\nI'd give anything to make you mine, all mine\nI'll do your biddin' and be at your beck and call\"\nYeah, I've never seen anyone lookin' so fine\nMan I gotta have her, she's a one of a kind\nI'm goin' once, goin' twice\nI'm sold to the lady in the second row\nShe's an eight, she's a nine, she's a ten I know\nShe's got ruby red lips, blond hair, blue eyes\nAnd I'm about to bid my heart goodbye\n\nWell, the auctioneer was goin' 'bout a mile a minute\nHe was takin' bids and callin' them out loud\nAnd I guess I was really gettin' in it\n'Cause I just shouted out above the crowd\n\nAnd I said, \"Hey, pretty lady! Won't you gimme a sign?\nI'd give anything to make you mine, all mine\nI'll do your biddin' and be at your beck and call\"\nYeah, I've never seen anyone lookin' so fine\nMan I gotta have her, she's a one of a kind\nI'm goin' once, goin' twice\nI'm sold to the lady in the long black dress\nWell she won my heart, it was no contest\nWith her ruby red lips, blond hair, blue eyes\nWell I'm about to bid my heart goodbye\n\nYeah, we found love on the auction block and I hauled her heart away\nNow we still love to laugh about, the way we met that day\n\nWhen I said, \"Hey, pretty lady! Won't you gimme a sign?\nI'd give anything to make you mine, all mine\nI'll do your biddin' and be at your beck and call\"\nYeah, I've never seen anyone lookin' so fine\nMan I gotta have her, she's a one of a kind\nI'm goin' once, goin' twice\nI'm sold to the lady in the second row\nShe's an eight, she's a nine, she's a ten I know\nShe's got ruby red lips, blond hair, blue eyes\nAnd I'm about to bid my heart goodbye hee",
-      "updatedAt": "2026-08-28T02:06:22.654Z",
-      "spotifyUrl": "https://open.spotify.com/search/Sold%20-%20The%20Grundy%20County%20Auction%20Incident"
+      "chordData": "[Intro: A--D|A--G|A--D|A--G]\n\nWell [A]I went down to the Grundy County [D]Auction\nWhere [A]I saw somethin' I just had to [E]have\nMy [A]mind told me I should proceed with [D]caution\nBut my [A]heart said go [E]ahead and make a bid on [A]that [(G)]\n\nAnd I said, [A]\"Hey, pretty lady! Won't you gimme a sign?\nI'd give anything to make you mine, all mine\nI'll [D]do your biddin' and [G]be at your beck and [A]call\"\nYeah, I've [A]never seen anyone lookin' so fine\nMan I gotta have her, she's a one of a kind\nI'm [D]goin' once, [E]goin' twice\nI'm [A]sold [NC]to the lady in the second row\nShe's an eight, she's a nine, she's a ten I know\nShe's got ruby red lips, blond hair, blue eyes\nAnd I'm about to bid my heart goodbye\n\n[A--D|A--G|A--D|A--G]\n\nWell, the auctioneer was goin' 'bout a mile a minute\nHe was takin' bids and callin' them out loud\nAnd I guess I was really gettin' in it\n'Cause I just shouted out above the crowd\n\nAnd I said, \"Hey, pretty lady! Won't you gimme a sign?\nI'd give anything to make you mine, all mine\nI'll do your biddin' and be at your beck and call\"\nYeah, I've never seen anyone lookin' so fine\nMan I gotta have her, she's a one of a kind\nI'm goin' once, goin' twice\nI'm sold to the lady in the long black dress\nWell she won my heart, it was no contest\nWith her ruby red lips, blond hair, blue eyes\nWell I'm about to bid my heart goodbye\n\nYeah, [E]we found love on the auction block and I [F#]hauled her heart away\nNow [G]we still love to laugh about, the [E]way we met that day [(G)]\n\nWhen I said, \"Hey, pretty lady! Won't you gimme a sign?\nI'd give anything to make you mine, all mine\nI'll do your biddin' and be at your beck and call\"\nYeah, I've never seen anyone lookin' so fine\nMan I gotta have her, she's a one of a kind\nI'm goin' once, goin' twice\nI'm sold to the lady in the second row\nShe's an eight, she's a nine, she's a ten I know\nShe's got ruby red lips, blond hair, blue eyes\nAnd I'm about to bid my heart goodbye hee\n\n[A--D|A--G|A--D|A--G]\n\nYeah, [E]we found love on the auction block and I [F#]hauled her heart away\nNow [G]we still love to laugh about, the [E]way we met that day [(G)]\n\nWhen I said, \"Hey, pretty lady! Won't you gimme a sign?\nI'd give anything to make you mine, all mine\nI'll do your biddin' and be at your beck and call\"\nYeah, I've never seen anyone lookin' so fine\nMan I gotta have her, she's a one of a kind\nI'm goin' once, goin' twice\nI'm sold to the lady in the second row\nShe's an eight, she's a nine, she's a ten I know\nShe's got ruby red lips, blond hair, blue eyes\nAnd I'm about to bid my heart goodbye hee",
+      "updatedAt": "2026-08-29T16:37:43.242Z"
     },
     {
       "id": "song_20pj8fspy",
@@ -1693,13 +1694,13 @@
       "id": "song_bub5uabxy",
       "title": "Tequila Makes Her Clothes Fall Off",
       "artist": "Joe Nichols",
+      "spotifyUrl": "https://open.spotify.com/search/Tequila%20Makes%20Her%20Clothes%20Fall%20Off%20Joe%20Nichols",
       "originalKey": "D",
       "timeSignature": "4/4",
       "bpm": "94",
       "genre": "Country",
-      "chordData": "Verse 1\nShe said I'm going out with my girlfriends\nFor margaritas at the Holiday Inn\nOh, have mercy, my only thought\nWas tequila makes her clothes fall off\nI told her put an extra layer on\nI know what happens when she drinks Patrón\nHer closet's missing half the things she bought\nYeah, tequila makes her clothes fall off\n\nChorus\nShe'll start by kicking out of her shoes\nLose an earring in her drink\nLeave her jacket in the bathroom stall\nDrop a contact down the sink\nThem pantyhose ain't gonna last too long\nIf the DJ puts Bon Jovi on\nShe might come home in a tablecloth\nYeah, tequila makes her clothes fall off\nWoah-oh\n\nVerse 2\nShe can handle any champagne brunch\nA bridal shower with Bacardi punch\nJello shooters full of Smirnoff\nBut tequila makes her clothes fall off\n\nChorus\nShe'll start by kicking out of her shoes\nLose an earring in her drink\nLeave her jacket in the bathroom stall\nDrop a contact down the sink\nShe don't mean nothing\nShe's just having fun\nTomorrow she'll say, oh, what have I done?\nHer friends will joke about the stuff she lost\nYeah, tequila makes her clothes fall off\nOh, tequila makes her clothes fall off\nOh, tequila makes her clothes fall off",
-      "updatedAt": "2026-08-28T01:46:01.275Z",
-      "spotifyUrl": "https://open.spotify.com/search/Tequila%20Makes%20Her%20Clothes%20Fall%20Off%20Joe%20Nichols"
+      "chordData": "[Intro: |D C B F |D - - -|]\n\nVerse 1\n[D]She said I'm going out with [G]my girl[D]friends\n[D]For margaritas at the [A]Holiday [D]Inn\n[D]Oh, have mercy, my [G]only [A]thought\nWas te[Bm]quila makes her [A]clothes fall [D]off\nI told her put an extra layer on\nI know what happens when she drinks Patrón\nHer closet's missing half the things she bought\nYeah, tequila makes her clothes fall off\n\nChorus\n[G]She'll start by kicking [D]out of her shoes\n[A]Lose an earring in her [D]drink\n[G]Leave her jacket in the [D]bathroom stall\n[E]Drop a contact down the [A]sink\n[D]Them pantyhose ain't gonna [G]last too [D]long\nIf the DJ puts Bon [A]Jovi [D]on\nShe might come home in a [G]table[D]cloth\nYeah, te[Bm]quila makes her [A]clothes fall [D]off\nWoah-oh\n\n[G---|D---|Bm-A-|D---]\n\nVerse 2\nShe can handle any champagne brunch\nA bridal shower with Bacardi punch\nJello shooters full of Smirnoff\nBut tequila makes her clothes fall off\n\nChorus\nShe'll start by kicking out of her shoes\nLose an earring in her drink\nLeave her jacket in the bathroom stall\nDrop a contact down the sink\nShe don't mean nothing\nShe's just having fun\nTomorrow she'll say, oh, what have I done?\nHer friends will joke about the stuff she lost\nYeah, tequila makes her clothes fall off\nOh, tequila makes her clothes fall off\nOh, tequila makes her clothes fall [D C B F| D - - -]off",
+      "updatedAt": "2026-08-29T16:57:38.015Z"
     },
     {
       "id": "song_z2c1mf9f6",
@@ -1748,6 +1749,18 @@
       "genre": "Bluegrass",
       "chordData": "Tonight my heart is lonely for the folks back home\nWhere I left my mother and daddy all alone\nThere's been a lot of changes since I been around\nI'd like to wander back to the old home town\n\n    You'll never miss the home folks until you've gone away\n    Then you'll need a friend to help you every day\n    Then you'll call on mother but she won't be around\n    I'd like to wander back to the old home town\n\nI’ve searched this whole world over since I’ve been around\nI’ve never found a place just like the old home town\nIf I could live life over I’d never roam around\nI’d like to wander back to the old home day\n",
       "updatedAt": "2026-08-28T15:26:51.280Z"
+    },
+    {
+      "id": "song_31tybvzn3",
+      "title": "The Story Of Isaac",
+      "artist": "Mighty Poplar",
+      "spotifyUrl": "https://open.spotify.com/search/The%20Story%20Of%20Isaac%20Mighty%20Poplar",
+      "originalKey": "",
+      "timeSignature": "4/4",
+      "bpm": "",
+      "genre": "Bluegrass",
+      "chordData": "Well, the [F]door, it opened [Bb]slowly\nMy [F]father came in, I was [Bb]nine years [F]old\nHe [F]stood so tall [Bb]above me\nHis [F]blue eyes, they were shining, and his [Bb]voice was very [F]cold\nHe [C]said, \"I've had a [F]vision\nAnd you [Bb]know I'm strong and [F]holy, I must [Bb]do what I've been [F]told\"\nSo we [C]started up the [F]mountain\nI was [Bb]running, he was [F]walking, and his [Bb]axe was made of [F]gold\n\nThe trees, they got much smaller\nThe lake, a lady's mirror, he stopped to drink some wine\nThen he threw the bottle over\nIt broke a minute later, and he put his hand on mine\nWell, I thought I saw an eagle\nBut it might have been a vulture, you know I never could decide\nThen my father built an altar\nHe looked once behind his shoulder, for he knew I would not hide\n\nSo you who build the altars now\nTo sacrifice these children, you must not do it anymore\nFor a scheme is not a vision\nAnd you never have been tempted by a demon or a god\nOh, you who stand above them now\nYour hatchets blunt and bloody, you were not there before\nWhen I lay upon a mountain\nAnd my father's hands were trembling with the beauty of the world\n\nSo if you call me brother now\nForgive me if I inquire, just according to whose plan?\n'Cause when it all comes down to dust\nI'll kill you if I must, but I will help you if I can\nYes, when it all comes down to dust\nI'll help you if I must, but I will kill you if I can\nSo have mercy on our uniform\nAnd of peace or man of war, the peacock spreads his fan\n\nThere I lay upon the mountain\nAnd my father's hands were trembling with the beauty of the world",
+      "updatedAt": "2026-08-28T20:27:30.417Z"
     },
     {
       "id": "song_08obw2yqw",
@@ -1884,25 +1897,25 @@
       "id": "song_208r642iw",
       "title": "Who's Cheatin Who",
       "artist": "Alan Jackson",
+      "spotifyUrl": "https://open.spotify.com/search/Who's%20Cheatin%20Who%20Alan%20Jackson",
       "originalKey": "G",
       "timeSignature": "4/4",
       "bpm": "133",
       "genre": "Country",
-      "chordData": "Everywhere you look\nYou can write a book\nOn the trouble of a woman and a man\nBut you can not impose\nYou can't stick your nose\nInto something that you don't understand\n\nBut still you wonder\nWho's cheatin' who\nWho's being true\nAnd who don't even care anymore\nIt makes you wonder\nWho's doin' right with someone tonight\nAnd who's car is parked next door\n\nI thought I knew her well\nI really couldn't tell\nThat she had another lover on her mind\nYou see it felt so right\nWhen she held me tight\nHow could I be so blind\n\nA heart is on the line\nEach and every time\nLove is stolen in the shadows of the night\nThough it's wrong all along\nIt keeps goin' on\nAs long as you keep in outta sight",
-      "updatedAt": "2026-08-28T01:55:37.992Z",
-      "spotifyUrl": "https://open.spotify.com/search/Who's%20Cheatin%20Who%20Alan%20Jackson"
+      "chordData": "[G]Everywhere you look\n[C]You can write a book\nOn the [G]trouble of a woman and a [D]man\nBut you [G]can not impose\nYou [C]can't stick your nose\nInto [G]something that you [D]don't under[G]stand\n\nBut [D]still you wonder\n[G]Who's cheatin' who\n[C]Who's being true\nAnd [G]who don't even care any[D]more\nIt [F]makes you wonder\n[G]Who's doin' right with [C]someone tonight\nAnd [G]who's car is [D]parked next [G]door\n\nI thought I knew her well\nI really couldn't tell\nThat she had another lover on her mind\nYou see it felt so right\nWhen she held me tight\nHow could I be so blind\n\nA heart is on the line\nEach and every time\nLove is stolen in the shadows of the night\nThough it's wrong all along\nIt keeps goin' on\nAs long as you keep in outta sight",
+      "updatedAt": "2026-08-29T16:32:33.594Z"
     },
     {
       "id": "song_rljv23qwi",
       "title": "Why Don't We Just Dance",
       "artist": "Josh Turner",
+      "spotifyUrl": "https://open.spotify.com/search/Why%20Don't%20We%20Just%20Dance%20Josh%20Turner",
       "originalKey": "F",
       "timeSignature": "4/4",
       "bpm": "122",
       "genre": "Country",
-      "chordData": "Baby, why don't we just turn that TV off\nThree hundred fifteen channels of nothin' but bad news on\nWell, it might be me, but the way I see it\nThe whole wide world has gone crazy\nSo baby, why don't we just dance?\n\nGuess the little bitty livin' room ain't gonna look like much\nWhen the lights go down and we move the couch\nIt's gonna be more than enough\nFor my two left feet and our two hearts beatin'\nNobody's gonna see us go crazy\nSo baby, why don't we just dance\n\nDown the hall, maybe straight up the stairs\nBouncin' off the wall, floatin' on air\nBaby, why don't we just dance?\n\nBaby, why don't you go put your best dress on\nAnd those high-heeled shoes you love to lose\nAs soon as the tunes come on\nOn second thought, just the way you are is already drivin' me crazy\nSo baby, why don't we just dance\nDown the hall, maybe straight up the stairs\nBouncin' off the wall, floatin' on air\nBaby, why don't we just dance\nI'll cut a rug\n\nWell, it might be me but the way I see it\nThe whole wide world has gone crazy\nSo baby, why don't we just dance\n(Bouncin' off the wall, floatin' on air)\nOh, baby (baby), why don't we just dance",
-      "updatedAt": "2026-08-28T01:38:25.552Z",
-      "spotifyUrl": "https://open.spotify.com/search/Why%20Don't%20We%20Just%20Dance%20Josh%20Turner"
+      "chordData": "[Intro: F---|F---|Bb-C-|F---]\n\n[Form:]\n[F---|Am---|Dm---|Bb---]\n[F---|Am---|Dm---|Bb---]\n[F---|Faug---|F6---|F7---]\n[Bb-C-|F---]\n\nBaby, [F]why don't we just [Am]turn that TV [Dm]off [Bb]\n[F]Three hundred fif[Am]teen channels of [Dm]nothin' but bad news [Bb]on\nWell, it [F]might be me, but the [Faug]way I see it\nThe [F6]whole wide world has gone [F7]crazy [Bb]\nSo baby, [C]why don't we just [F]dance?\n\nGuess the [F]little bitty [Am]livin' room ain't gonna [Dm]look like much[Bb]\nWhen the [F]lights go down and we [Am]move the couch\nIt's gonna be [Dm]more than [Bb]enough\nFor my [F]two left feet and our [Faug]two hearts beatin'\nNo[F6]body's gonna see us go [F7]crazy [Bb]\nSo baby, [C]why don't we just [F]dance [NC]\n\nDown the hall, maybe straight up the stairs\nBouncin' off the wall, floatin' on air [Bb]\nBaby, [C]why don't we just dance?\n\nBaby, why don't you go put your best dress on\nAnd those high-heeled shoes you love to lose\nAs soon as the tunes come on\nOn second thought, just the way you are is already drivin' me crazy\nSo baby, why don't we just dance\n[NC]Down the hall, maybe straight up the stairs\nBouncin' off the wall, floatin' on air\n[Bb]Baby, [C]why don't we just [F]dance\nI'll cut a rug\n[Bb C F]\n\nWell, it [F]might be me, but the [Faug]way I see it\nThe [F6]whole wide world has gone [F7]crazy [Bb]\nSo baby, [C]why don't we just [F]dance?\n(Bouncin' off the wall, floatin' on air)\nOh, [Bb]baby (baby), [C]why don't we just [F]dance\n\n[Bb C F]",
+      "updatedAt": "2026-08-29T16:52:35.725Z"
     },
     {
       "id": "song_21yayh9m4",
@@ -1967,13 +1980,13 @@
       "id": "song_bw7w2kypa",
       "title": "Your Man",
       "artist": "Josh Turner",
+      "spotifyUrl": "https://open.spotify.com/search/Your%20Man%20Josh%20Turner",
       "originalKey": "G",
       "timeSignature": "4/4",
       "bpm": "101",
       "genre": "Country",
-      "chordData": "Baby, lock the door and turn the lights down low\nPut some music on that's soft and slow\nBaby, we ain't got no place to go\nI hope you understand\nI've been thinkin' 'bout this all day long\nNever felt a feelin' quite this strong\nI can't believe how much it turns me on\nJust to be your man\n\nThere's no hurry, don't you worry\nWe can take our time\nCome a little closer\nLet's go over what I had in mind\n\nAin't nobody, ever love nobody\nThe way that I love you\nWe're alone now\nYou don't know how long I've wanted to",
-      "updatedAt": "2026-08-28T01:55:06.064Z",
-      "spotifyUrl": "https://open.spotify.com/search/Your%20Man%20Josh%20Turner"
+      "chordData": "[Intro: C G D G]\n\nBaby, [NC]lock the door and turn the [C]lights down low\nPut some music on that's [G]soft and slow\nBaby, we ain't got no [D]place to go\nI hope you under[G]stand\nI've been thinkin' 'bout this [C]all day long\nNever felt a feelin' [G]quite this strong\nI can't believe how much it [D]turns me on\nJust to be your [G]man\n\n[Am]There's no hurry, don't you worry\n[G]We can take our time\n[Am]Come a little closer\n[Bm]Let's go over [C]what I had in [D]mind\n\nAin't nobody, ever love nobody\nThe way that I love you\nWe're alone now\nYou don't know how long I've wanted to",
+      "updatedAt": "2026-08-29T16:29:57.912Z"
     }
   ]
 }
