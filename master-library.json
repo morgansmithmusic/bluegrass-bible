@@ -1,5 +1,5 @@
 {
-  "activeSetlistId": "set_1787878570621",
+  "activeSetlistId": "set_1787929490742",
   "setlists": [
     {
       "id": "set_1",
@@ -167,14 +167,29 @@
       "songIds": [
         "song_wrqc6hqoe",
         "song_x0s2hvd25",
-        "song_x02bfwmpe",
+        "song_8ap7a4ds0",
         "song_toij53sbd",
-        "song_bor02alej",
-        "song_ob9fg5qbl",
-        "song_13iboti8e",
-        "song_2js25u0hy",
+        "song_erzv9mioc",
+        "song_093zipcok",
+        "song_rqcy01x5w",
+        "song_hr85z2dgc",
         "song_88l30ddxj",
-        "song_fd4duxyz9"
+        "song_g47qvuykk",
+        "song_y8wls5lzx",
+        "song_5eal00oco",
+        "song_x02bfwmpe",
+        "song_6kskl3edm",
+        "song_vy9k83vmd",
+        "song_cqibfo86n",
+        "song_vaw5qrrrh",
+        "song_8h1x58obz",
+        "song_9uwefpgiw",
+        "song_d5vinqdj5",
+        "song_13iboti8e",
+        "song_9xz5mjfcu",
+        "song_88odh3vpk",
+        "song_bor02alej",
+        "song_ob9fg5qbl"
       ]
     }
   ],
@@ -304,12 +319,24 @@
       "title": "Angeline The Baker",
       "artist": "",
       "spotifyUrl": "https://open.spotify.com/search/Angeline%20The%20Baker",
-      "originalKey": "",
+      "originalKey": "D",
       "timeSignature": "4/4",
       "bpm": "",
       "genre": "Bluegrass",
       "chordData": "Angeline the baker, lives on the village green\nThe way I always loved her, beats all you've ever seen\nAngeline the baker, Angeline I know\nShould have married Angeline, twenty years ago\n\nAngeline the baker, age of 43\nFed her sugar candy, but she still won't marry me\nAngeline the baker, Angeline I know\nShould have married Angeline, just twenty years ago\n\nHer father was a baker, his name was Uncle Sam\nI never can forget her, no matter where I am\nShe said couldn't do hard work, because she is not stout\nBaked biscuits every day and poured the coffee out\n\nI bought Angeline a brand new dress, neither black nor brown\nIt was the colour of a stormy skies, before the rain came down\nSixteen horses in my team, the leader he was blind\nI dreamed that I was dying, I saw my Angeline",
-      "updatedAt": "2026-08-28T15:52:01.267Z"
+      "updatedAt": "2026-09-11T21:50:19.113Z"
+    },
+    {
+      "id": "song_d5vinqdj5",
+      "title": "Benton's Dream",
+      "artist": "",
+      "spotifyUrl": "https://open.spotify.com/search/Benton's%20Dream",
+      "originalKey": "A",
+      "timeSignature": "4/4",
+      "bpm": "",
+      "genre": "Bluegrass",
+      "chordData": "",
+      "updatedAt": "2026-09-11T21:48:24.625Z"
     },
     {
       "id": "song_mab9ysq2o",
@@ -352,12 +379,12 @@
       "title": "Big Spike Hammer",
       "artist": "",
       "spotifyUrl": "https://open.spotify.com/search/Big%20Spike%20Hammer",
-      "originalKey": "",
+      "originalKey": "A",
       "timeSignature": "4/4",
       "bpm": "",
       "genre": "Bluegrass",
       "chordData": "\nCan’t you hear the whistle of my big spike hammer\nLord it’s busting my side\nI’ve done all I can do to keep that woman happy\nStill she’s not satisfied\n\n   Hey hey Della Mae\n   Why do you treat me this way\n   Hey hey Della Mae\n   I’ll get even some day\n\nI’m the best hammer swinger on this big section gang\nBig Bill Johnson is my name\nLord this hammer that I swing for a dollar and a half a day\nI’ll all for my Della Mae\n\nNow I’ve been lots of places, not much I ain’t done\nThere’s still alot of things I’d like to see\nLord this hammer that I swing or the woman that I love\nYes, one’s gonna be the death of me\n\n",
-      "updatedAt": "2026-08-28T15:05:09.069Z"
+      "updatedAt": "2026-09-11T21:51:23.845Z"
     },
     {
       "id": "song_pk1rzzqme",
@@ -424,12 +451,12 @@
       "title": "Born With A Hammer In My Hand",
       "artist": "",
       "spotifyUrl": "https://open.spotify.com/search/Born%20With%20A%20Hammer%20In%20My%20Hand",
-      "originalKey": "",
+      "originalKey": "A",
       "timeSignature": "4/4",
       "bpm": "",
       "genre": "Bluegrass",
       "chordData": "I was born with a hammer in my hand\nIt's that kind of life i doubt you'd understand\nI'd give everything just to hear that cold steel ring\nI was born with a hammer in my hand\n\nSwingin' steel's the only life i've known\nI've never been afraid to be alone\nI know my mama understands i'ii always be a working man\nI am born with a hammer in my hand\n\nJohn henry was a steel-drivin' man\nYou could hear his hammer ring across the land\nBut before the steam drill came, john henry knew my name\nI was born with a hammer in my hand\n\nThe stro-boss tries to break a good man's back\nHe takes thirty men to lay a mile of track\nBut if my shaker holds the line, they'll be minutes miles behind me\nI was born with a hammer in my hand\n\nWell they say john henry is the man\nYou can hear his hammer ring across the land\nBut if you put us side by side, he'd have to run and hide\nI was born with a hammer in my hand",
-      "updatedAt": "2026-08-28T15:38:01.713Z"
+      "updatedAt": "2026-09-11T21:52:17.814Z"
     },
     {
       "id": "song_vkk76awqz",
@@ -442,6 +469,18 @@
       "chordData": "",
       "updatedAt": "2026-08-28T01:24:56.920Z",
       "spotifyUrl": "https://open.spotify.com/search/break%20break"
+    },
+    {
+      "id": "song_6kskl3edm",
+      "title": "Brown County Barn",
+      "artist": "",
+      "spotifyUrl": "https://open.spotify.com/search/Brown%20County%20Barn",
+      "originalKey": "B",
+      "timeSignature": "4/4",
+      "bpm": "",
+      "genre": "Bluegrass",
+      "chordData": "",
+      "updatedAt": "2026-09-11T21:44:34.249Z"
     },
     {
       "id": "song_crc184eou",
@@ -490,6 +529,18 @@
       "genre": "Country",
       "chordData": "It started way back in third grade\nI used to sit beside Emmylou Hayes\nA pink dress, a matching bow, and her ponytail\nShe kissed me on the school bus, but told me not to tell\nNext day, I chased her around the playground\n'Cross the monkey bars, to the merry-go-round\nAnd Emmylou got caught passing me a note\nBefore the teacher took it, I read what she wrote\n\n\"Do you love me? Do you wanna be my friend?\nAnd if you do\nWell, then don't be afraid to take me by the hand\nIf you want to\nI think this is how love goes, check 'yes' or 'no'\"\n\nNow we're grown up, and she's my wife\nStill like two kids with stars in our eyes\nAin't much changed, I still chase Emmylou\nUp and down the hall, around the bed in our room\nLast night I took her out in a white limousine\n20 years together, she still gets to me\nCan't believe it's been that long ago\nWhen we got started with just a little note\n\n\"Do you love me? Do you wanna be my friend?\nAnd if you do\nWell, then don't be afraid to take me by the hand\nIf you want to\nI think this is how love goes, check 'yes' or 'no'\"\n\n\"Do you love me? Do you wanna be my friend?\nAnd if you do\nWell, then don't be afraid to take me by the hand\nIf you want to\nI think this is how love goes, check 'yes' or 'no'\"\nCheck 'yes' or 'no'\nCheck 'yes' or 'no'\nCheck 'yes' or 'no'\nCheck 'yes' or 'no'\n",
       "updatedAt": "2026-08-28T14:34:49.131Z"
+    },
+    {
+      "id": "song_vy9k83vmd",
+      "title": "Cherokee Waltz",
+      "artist": "Traditional",
+      "spotifyUrl": "https://open.spotify.com/search/Cherokee%20Waltz%20Traditional",
+      "originalKey": "D",
+      "timeSignature": "3/4",
+      "bpm": "",
+      "genre": "Bluegrass",
+      "chordData": "",
+      "updatedAt": "2026-09-11T21:45:20.137Z"
     },
     {
       "id": "song_5z522gudj",
@@ -544,12 +595,12 @@
       "title": "Darcy Farrow",
       "artist": "Rice Brothers",
       "spotifyUrl": "https://open.spotify.com/search/Darcy%20Farrow%20Rice%20Brothers",
-      "originalKey": "",
+      "originalKey": "D",
       "timeSignature": "4/4",
       "bpm": "",
       "genre": "Bluegrass",
       "chordData": "Where the Walker runs down to the Carson Valley plain,\nThere lived a maiden, Darcy Farrow was her name\nThe daughter of old Dundee and fair was she\nAnd the sweetest flower that bloomed o’er the range.\n\nHer voice was sweet as the sugar candy\nHer touch was as soft as a bed of goose down.\nHer eyes shone bright like the pretty lights\nThat shine in the night out of Yerrington town.\n\nShe was courted by young Vandermeer\nAnd quite handsome was he I am to hear\nHe brought her silver rings and lacy things\nAnd she promised to wed before the snows fell that year.\n\nBut her pony did stumble and she did fall.\nHer dyin’ touched on the heart of us all.\nYoung Vandy in his pain put a bullet to his brain\nAnd we buried them together as the snows began to fall.\n\nThey sing of Darcy Farrow where the Truckee runs through\nThey sing of her beauty in Virginia City too.\nAt dusty Sundown to her name they drink a round\nAnd to young Vandy whose love was true.",
-      "updatedAt": "2026-08-28T15:29:55.640Z"
+      "updatedAt": "2026-09-11T21:50:36.175Z"
     },
     {
       "id": "song_ssttface2",
@@ -736,12 +787,12 @@
       "title": "Freeborn Man",
       "artist": "",
       "spotifyUrl": "https://open.spotify.com/search/Freeborn%20Man",
-      "originalKey": "",
+      "originalKey": "A",
       "timeSignature": "4/4",
       "bpm": "",
       "genre": "Bluegrass",
       "chordData": "Well I was born in the Southland, some twenty-odd years ago\nI ran away for the first time when I was only four years old\nI'm a free born man, my home is on my back\nI know every inch of highway, every foot of backroad, every mile of railroad track\n\nI've got a girl in Cincinnati, a woman in San Antone\nI always loved the girl next door but any place is home\nI'm a free born man, my home is on my back\nI know every inch of highway, every foot of backroad, every mile of railroad track\n\nI got me this Martin guitar, I carry in an old tote sack\nI hocked it about two hundred times but I always get it back\nI'm a free born man, my home is on my back\nI know every inch of highway, every foot of backroad, every mile of railroad track\n\nYou may not like my appearance, and you may not like my song\nYou may not like the way I talk, but you like the way I'm gone\nI'm a free born man, my home is on my back\nI know every inch of highway, every foot of backroad, every mile of railroad track",
-      "updatedAt": "2026-08-28T15:14:11.338Z"
+      "updatedAt": "2026-09-11T21:51:09.362Z"
     },
     {
       "id": "song_prp6ydnxz",
@@ -1084,12 +1135,12 @@
       "title": "It's Mighty Dark To Travel",
       "artist": "",
       "spotifyUrl": "https://open.spotify.com/search/It's%20Mighty%20Dark%20To%20Travel",
-      "originalKey": "",
+      "originalKey": "G",
       "timeSignature": "4/4",
       "bpm": "",
       "genre": "Bluegrass",
       "chordData": "To me she was my little angel\nSent down to me from God above\nFor on the day that I first met her\nThat I told her of my love\n\n   It's mighty dark for me to travel\n   For my sweetheart, she is gone\n   The road is rough and filled with gravel\n   But I must journey on and on\n\nTraveling down this lonesome highway\nThinking of my love who's gone\nKnowing soon we'll be together\nShe's the only love I've known\n\nMany a night we strolled together\nTalking of our love so fair\nMy love for her will never vanish\nFor I know I'll meet her there",
-      "updatedAt": "2026-08-28T15:43:01.665Z"
+      "updatedAt": "2026-09-11T21:51:46.270Z"
     },
     {
       "id": "song_7kcvjqxn1",
@@ -1216,12 +1267,12 @@
       "title": "More Pretty Girls Than One",
       "artist": "",
       "spotifyUrl": "https://open.spotify.com/search/More%20Pretty%20Girls%20Than%20One",
-      "originalKey": "",
+      "originalKey": "D",
       "timeSignature": "4/4",
       "bpm": "",
       "genre": "Bluegrass",
       "chordData": "There's more pretty girls than one\nMore pretty girls than one\nAny old town that I ramble all around in\nThere's more pretty girls than one\n\nMama talked to me last night\nShe gave to me some good advice\nShe said, son you ought to quit this old ramblin' all around\nAnd marry you a sweet loving wife\n\nHoney, look down that old lonesome road\nHang down your pretty head and cry\n'Cause I'm thinking all about them pretty little gals\nAnd hoping that I'll never die\n",
-      "updatedAt": "2026-08-28T15:22:59.251Z"
+      "updatedAt": "2026-09-11T21:51:17.061Z"
     },
     {
       "id": "song_xmdv4b6ln",
@@ -1264,12 +1315,12 @@
       "title": "Nellie Kane",
       "artist": "Hot Rize",
       "spotifyUrl": "https://open.spotify.com/search/Nellie%20Kane%20Hot%20Rize",
-      "originalKey": "E",
+      "originalKey": "D",
       "timeSignature": "4/4",
       "bpm": "",
       "genre": "Bluegrass",
       "chordData": "As a young man I went riding out on the western plain\nIn the state of North Dakota I met my Nellie Kane\nI met my Nellie Kane\n\nShe was living in a lonely cabin with a son by another man\nFive years she had waited for him as long as a woman can\nAs long as a woman can\n\n   I don’t know what changed my mind\n   ‘Til then I was the rambling kind\n   The kind of love I can’t explain\n   That I had for Nellie Kane\n\nShe hired me on to work that day to help her till the land\nIn the afternoon we planted seeds in the evening we held hands\nIn the evening we held hands\n\nHer blue eyes told me everything a man could want to know\nIt was then I realized that I would never go   \nThat I would never go\n\nNow many years have gone by and her son has grown up tall\nI became a father to him and she became my all\nShe became my all\n",
-      "updatedAt": "2026-08-28T15:24:38.635Z"
+      "updatedAt": "2026-09-11T21:50:08.839Z"
     },
     {
       "id": "song_hlimc95cb",
@@ -1288,12 +1339,12 @@
       "title": "New River Train",
       "artist": "",
       "spotifyUrl": "https://open.spotify.com/search/New%20River%20Train",
-      "originalKey": "",
+      "originalKey": "E",
       "timeSignature": "4/4",
       "bpm": "",
       "genre": "Bluegrass",
       "chordData": "   I’m riding on that New River Train\n   I’m riding on that New River Train\n   That same old train that brought me here\n   Is gonna carry me away again\n\nDarling you can’t love one\nDarling you can’t love one\nYou can’t love one and have any fun\nOh darling you can’t love one\n\nDarling you can’t love two\nDarling you can’t love two\nYou can’t love two and your little heart be true\nOh darling you can’t love two\n\nDarling you can’t love three\nDarling you can’t love three\nYou can’t love three and still love me\nOh darling you can’t love three\n\nDarling you can’t love four\nDarling you can’t love four\nYou can’t love four and love me anymore\nOh darling you can’t love four",
-      "updatedAt": "2026-08-28T15:50:51.239Z"
+      "updatedAt": "2026-09-11T21:50:50.704Z"
     },
     {
       "id": "bg_002",
@@ -1347,12 +1398,12 @@
       "title": "Old Home Place",
       "artist": "",
       "spotifyUrl": "https://open.spotify.com/search/Old%20Home%20Place",
-      "originalKey": "",
+      "originalKey": "Bb",
       "timeSignature": "4/4",
       "bpm": "",
       "genre": "Bluegrass",
       "chordData": "It's been ten long years since I left my home\nIn the hollow where I was born\nWhere the cool fall nights make the wood smoke rise\nAnd the foxhunter blows his horn\n\nI fell in love with a girl from the town\nI thought that she would be true\nI ran away to Charlottesville\nAnd worked in a sawmill or two\n\n   What have they done to the old home place\n   Why did they tear it down\n   And why did I leave the plow in the field\n   And look for a job in the town\n\nWell my girl she ran off with somebody else\nThe taverns took all my pay\nAnd here I stand where the old home stood\nBefore they took it away\n\nNow the geese they fly south and the cold wind blows\nAs I stand here and hang my head\nI've lost my love I've lost my home\nAnd now I wish that I was dead\n",
-      "updatedAt": "2026-08-28T15:24:51.501Z"
+      "updatedAt": "2026-09-11T21:51:35.734Z"
     },
     {
       "id": "song_bxw3i39jn",
@@ -1475,16 +1526,28 @@
       "updatedAt": "2026-08-28T16:00:59.032Z"
     },
     {
+      "id": "song_8h1x58obz",
+      "title": "Red Prairie Dawn",
+      "artist": "Traditional",
+      "spotifyUrl": "https://open.spotify.com/search/Red%20Prairie%20Dawn%20Traditional",
+      "originalKey": "A",
+      "timeSignature": "4/4",
+      "bpm": "",
+      "genre": "Bluegrass",
+      "chordData": "",
+      "updatedAt": "2026-09-11T21:46:54.260Z"
+    },
+    {
       "id": "song_88l30ddxj",
       "title": "Reuben's Train",
       "artist": "",
       "spotifyUrl": "https://open.spotify.com/search/Reuben's%20Train",
-      "originalKey": "",
+      "originalKey": "G",
       "timeSignature": "4/4",
       "bpm": "",
       "genre": "Bluegrass",
       "chordData": " Ol Reuben made a train & he put it on a track\n He ran it to the Lord knows where\n Oh me, oh my ran it to the Lord knows where\n\n Should been in town when Reuben's train went down\n You could hear that whistle blow 100 miles\n Oh me, oh my you could hear the whistle blow 100 miles\n\n Last night I lay in jail had no money to go my bail\n Lord how it sleeted & it snowed\n Oh me, oh my Lord how it sleeted & it snowed\n\n I've been to the East, I've been to the West\n I'm going where the chilly winds don't blow\n Oh me, oh my I'm going where the chilly winds don't blow\n\n Oh the train that I ride is 100 coaches long\n You can hear the whistle blow 100 miles\n Oh me, oh my you can hear the whistle blow 100 miles\n\n I got myself a blade, laid Reuben in the shade,\n I'm startin' me a graveyard of my own.\n Oh, me, oh lordy my, startin' me a graveyard of my own.",
-      "updatedAt": "2026-08-28T15:41:29.442Z"
+      "updatedAt": "2026-09-11T21:52:05.265Z"
     },
     {
       "id": "song_oxmyuy653",
@@ -1527,12 +1590,12 @@
       "title": "Roving Gambler",
       "artist": "",
       "spotifyUrl": "https://open.spotify.com/search/Roving%20Gambler",
-      "originalKey": "",
+      "originalKey": "G",
       "timeSignature": "4/4",
       "bpm": "",
       "genre": "Bluegrass",
       "chordData": "I am a roving gambler gambled all around\nWhenever I meet with a deck of cards\nI lay my money down\nLay my money down, lay my money down\n\nI had not been in Frisco many more weeks than three\nI met up with a pretty little gal\nShe fell in love with me\nFell in love with me, fell in love with me\n\nShe took me in her parlor, cooled me with her fan\nWhispered low in her mother’s ear\nI love this gambling man\nLove this gambling man, love this gambling man\n\nOh daughter oh dear daughter how can you treat me so\nLeave your dear old mother\nAnd with a gambler go\nWith a gambler go, with a gambler go\n\nMy mother oh my mother you can not understand\nIf you ever see me a coming back\nI’ll be with a gambling man\nWith a gambling man, with a gambling man\n\nI left her there in Frisco and I wound up in Maine\nI met up with a gambling man\nGot in a poker game\nGot in a poker game, got in a poker game\n\nWe put our money in the pot and dealt the cards around\nI saw him deal from the bottom of the deck\nAnd I shot that gambler down\nShot the gambler down, shot the gambler down\n\nWell, now I’m in the jailhouse got a number for my name\nThe Warden said as he locked the door\nYou’ve gambled your last game\nGambled your last game, gambled your last game",
-      "updatedAt": "2026-08-28T15:56:53.889Z"
+      "updatedAt": "2026-09-11T21:51:56.253Z"
     },
     {
       "id": "song_5j15qklpp",
@@ -1763,6 +1826,18 @@
       "updatedAt": "2026-08-28T20:27:30.417Z"
     },
     {
+      "id": "song_9uwefpgiw",
+      "title": "The Watchhouse",
+      "artist": "",
+      "spotifyUrl": "https://open.spotify.com/search/The%20Watchhouse",
+      "originalKey": "A",
+      "timeSignature": "4/4",
+      "bpm": "",
+      "genre": "Bluegrass",
+      "chordData": "",
+      "updatedAt": "2026-09-11T21:47:23.391Z"
+    },
+    {
       "id": "song_08obw2yqw",
       "title": "Thinkin Problem",
       "artist": "David Ball",
@@ -1811,6 +1886,18 @@
       "spotifyUrl": "https://open.spotify.com/search/Tulsa%20Time%20Don%20Williams"
     },
     {
+      "id": "song_g47qvuykk",
+      "title": "Up On The Divide",
+      "artist": "Mighty Poplar",
+      "spotifyUrl": "https://open.spotify.com/search/Up%20On%20The%20Divide%20Mighty%20Poplar",
+      "originalKey": "E",
+      "timeSignature": "3/4",
+      "bpm": "",
+      "genre": "Bluegrass",
+      "chordData": "",
+      "updatedAt": "2026-09-11T21:43:29.289Z"
+    },
+    {
       "id": "song_pbmd8w2to",
       "title": "Waltz Across Texas",
       "artist": "Ernest Tubbs",
@@ -1844,6 +1931,18 @@
       "chordData": "Verse 1\nI was drivin' through Georgia in late July\nOn a day hot enough to make the devil sigh\nI saw a homemade sign writtin' in red\nRhine County Watermelon Festival ahead\nWell, I wasn't in a hurry, so I slowed down\nTook a two lane road to a one horse town\nThere was a party goin' on when I got there\nI heard a welcome speech from a small town mayor\n\nChorus\nHe said, \"We got a hundred gallons of sweet red wine\nMade from the biggest watermelons on the vine\nHelp yourself to some, but obey the law\nIf you drink, don't drive\nDo the watermelon crawl\"\n\nVerse 2\nWhen the band started playin The watermelon queen said\n\"Let me show you somethin' That you ain't never seen\"\nShe grabbed me by the arm said \"Come on lets go\"\nShe dipped down, spun around, and do-si-doed\nShe rocked back on her heels Dropped down to her knees\nCrawled across the floor Then she jumped back on her feet\nShe wiggled and she jiggled Beat all you ever saw\nSaid this is how you do The watermelon crawl\n\nChorus\nShe said, \"We got a hundred gallons of sweet red wine\nMade from the biggest watermelons on the vine\nHelp yourself to some, but obey the law\nIf you drink, don't drive\nDo the watermelon crawl\"\n\nVerse 3\nIf you're ever down in Georgia 'round about July\nIf you ain't in a hurry, then you oughta stop by\nI can guarantee that you're goin have a ball\nLearnin' how to do the watermelon crawl\n\nChorus\nWell, we got a hundred gallons of sweet red wine\nMade from the biggest watermelons on the vine\nHelp yourself to some, but obey the law\nIf you drink, don't drive\nDo the watermelon crawl\nYeah, do the watermelon crawl\nHave fun you all\nYeah, do the watermelon crawl",
       "updatedAt": "2026-08-28T01:45:32.992Z",
       "spotifyUrl": "https://open.spotify.com/search/Watermelon%20Crawl%20Tracy%20Byrd"
+    },
+    {
+      "id": "song_vaw5qrrrh",
+      "title": "When I Was A Cowboy",
+      "artist": "Andrew Marlin",
+      "spotifyUrl": "https://open.spotify.com/search/When%20I%20Was%20A%20Cowboy%20Andrew%20Marlin",
+      "originalKey": "D",
+      "timeSignature": "4/4",
+      "bpm": "",
+      "genre": "Bluegrass",
+      "chordData": "",
+      "updatedAt": "2026-09-11T21:46:22.251Z"
     },
     {
       "id": "song_lhzlboem9",
