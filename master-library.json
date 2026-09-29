@@ -1,5 +1,5 @@
 {
-  "activeSetlistId": "set_1790642404734",
+  "activeSetlistId": "set_1790644322841",
   "setlists": [
     {
       "id": "set_1",
@@ -236,6 +236,43 @@
         "song_9xz5mjfcu",
         "song_88l30ddxj"
       ]
+    },
+    {
+      "id": "set_1790644322841",
+      "name": "Bushel and Barrel Oct 10",
+      "status": "active",
+      "songIds": [
+        "song_wrqc6hqoe",
+        "song_aey3cliu5",
+        "song_toij53sbd",
+        "song_8ap7a4ds0",
+        "song_rhm4hn2yp",
+        "song_cqibfo86n",
+        "song_x02bfwmpe",
+        "song_9xz5mjfcu",
+        "song_x3ncyjrrl",
+        "song_bc7kmcdia",
+        "song_13iboti8e",
+        "song_xwumayf8q",
+        "song_ob9fg5qbl",
+        "song_czmfzwy1l",
+        "song_y8wls5lzx",
+        "song_vkk76awqz",
+        "song_2js25u0hy",
+        "song_c5z5nmnre",
+        "song_6vs19psfq",
+        "song_fd4duxyz9",
+        "song_anryzqi02",
+        "bg_002",
+        "song_207mbee63",
+        "song_zfo5epnt7",
+        "song_ntnkbqdpm",
+        "song_1kn401qht",
+        "song_rx0hz8jp4",
+        "song_12sojsmx4",
+        "song_g1agqlbg0",
+        "song_6u1me4syz"
+      ]
     }
   ],
   "library": [
@@ -372,6 +409,18 @@
       "updatedAt": "2026-09-11T21:50:19.113Z"
     },
     {
+      "id": "song_anryzqi02",
+      "title": "Barbed Wire",
+      "artist": "Morgan Smith",
+      "spotifyUrl": "https://open.spotify.com/search/Barbed%20Wire%20Morgan%20Smith",
+      "originalKey": "E",
+      "timeSignature": "4/4",
+      "bpm": "",
+      "genre": "Bluegrass",
+      "chordData": "Oh woe is me,\nwoe to my soul\nFor nothin can wash the blood from my hands\nYeah the devil told me so\nI know what waits for me\nNothin but hellfire\nFor the devil built a fence round the gates of hell\nAnd he lined it with barbed wire\n\nOh woe is me,\nWoe to my life\nFor nothing can free me from these four brick walls\nAnd return to me my own sight\nThe judge has sentenced me\nForty years in the muck and mire\nAnd the warden built a fence round my prison cell\nAnd he lined it with barbed wire\n\nOh woe is me\nWoe to my heart\nFor no one can love a sonnabitch like me\nYeah I knew it from the start\nI know what you think of me\nNothing but a cheat and liar\nFor I built a fence round this heart of mine\nAnd I lined it with barbed wire",
+      "updatedAt": "2026-09-29T01:18:22.610Z"
+    },
+    {
       "id": "song_d5vinqdj5",
       "title": "Benton's Dream",
       "artist": "",
@@ -457,15 +506,15 @@
     },
     {
       "id": "song_xwumayf8q",
-      "title": "Blue Ride Cabin Home",
+      "title": "Blue Ridge Cabin Home",
       "artist": "The Bluegrass Album Band",
-      "spotifyUrl": "https://open.spotify.com/search/Blue%20Ride%20Cabin%20Home%20The%20Bluegrass%20Album%20Band",
+      "spotifyUrl": "https://open.spotify.com/search/Blue%20Ridge%20Cabin%20Home%20The%20Bluegrass%20Album%20Band",
       "originalKey": "",
       "timeSignature": "4/4",
       "bpm": "",
       "genre": "Bluegrass",
       "chordData": "There's a well beaten path in the old mountainside\nWhere I wandered when I was a lad\nAnd I wandered alone to the place I call home\nIn those Blueridge hills far away\n\n   Oh I love those hills of old Virginia\n   From those Blueridge hills I did roam\n   When I die won't you bury me on the mountain\n   Far away near my Blueridge mountain home\n\nNow my thoughts wander back to that ramshackle shack\nIn those blue ridge hills far away\nWhere my mother and dad were laid there to rest\nThey are sleeping in peace together there\n\nI return to that old cabin home with the sigh\nI've been longing for days gone by\nWhen I die won't you bury me on that old mountain side\nMake my resting place upon the hills so high\n",
-      "updatedAt": "2026-08-28T15:08:11.378Z"
+      "updatedAt": "2026-09-29T01:15:07.671Z"
     },
     {
       "id": "song_bc7kmcdia",
@@ -804,6 +853,18 @@
       "updatedAt": "2026-08-28T14:39:46.297Z"
     },
     {
+      "id": "song_rhm4hn2yp",
+      "title": "Five Card Stud",
+      "artist": "F#m",
+      "spotifyUrl": "https://open.spotify.com/search/Five%20Card%20Stud%20F%23m",
+      "originalKey": "",
+      "timeSignature": "4/4",
+      "bpm": "",
+      "genre": "Bluegrass",
+      "chordData": "F#m A B F#m\n\nVerse 1:\n\"Don't you cry now Ante,\n     Your daddy's walkin away again\nYou just got to know when to fold em\"\n    He told her with a grin\n\"you see this life is just one big game\n    And your daddy's gotta win\nAnd when I cash in that pot\n    You're gonna thank me in the end\"\n\nVerse 2:\n\"Momma how come he don't want me?\"\n    Ante said with a cry\n\"hush now, child,\n    And wipe those tears from your eyes\nSave them for the one\n    Who deserves your love\nAnd let me tell you exactly\n    The man your daddy was.\"\n\nChorus:\n         F#m\nThe queen of spades is where your daddy \nC#\ngot his start\n              F#m                                C#\nBut no queen was ever able to hold his heart\n               F#m                                              C#\nWhen I met your daddy he was holdin the queen of clubs\n                B\nBut the queen of diamonds was always his \n         C#\nfirst love\n                         B                                              C#\nNow he's got no room left in his hand for us\n            B                     C#                        F#m\nYour daddy always was a five-card stud\n            B                     C#                        \nYour daddy always was a five-card stud\n\nF#m A B F#m\n\nVerse 3:\nNow Ante grew up strong\n    And she grew up smart\nAnd she built up concrete walls\n    Just to protect her heart\nSo when her daddy showed up\n    Tryin to buy back in\nShe told him, \"I never want to see your\n   Face around here again.\"",
+      "updatedAt": "2026-09-29T01:19:48.756Z"
+    },
+    {
       "id": "song_12sojsmx4",
       "title": "Folsom Prison",
       "artist": "Johnny Cash",
@@ -1006,6 +1067,18 @@
       "genre": "Bluegrass",
       "chordData": "I am a pilgrim and a stranger\nTraveling through this wearisome land\nI've got a home in that yonder city, good Lord\nAnd it's not, not made by hand\n\nI've got a mother, sister and a brother\nWho have gone this way before\nI am determined to go and see them, good Lord\nFor they're on that other shore\n\nI'm goin' down to the river of Jordan\nJust to bathe my wearisome soul\nIf I can just touch the hem of his garment, good Lord\nThen I know he'd take me home\n\nI am a pilgrim and a stranger\nTraveling through this wearisome land\nI've got a home in that yonder city, good Lord\nAnd it's not, not made by hand\n",
       "updatedAt": "2026-08-28T15:17:09.538Z"
+    },
+    {
+      "id": "song_1kn401qht",
+      "title": "I Just Got Paid",
+      "artist": "Morgan Smith",
+      "spotifyUrl": "https://open.spotify.com/search/I%20Just%20Got%20Paid%20Morgan%20Smith",
+      "originalKey": "G",
+      "timeSignature": "4/4",
+      "bpm": "",
+      "genre": "Bluegrass",
+      "chordData": "Hallelujah, I just got paid\nI can make it through another day\nDon't think I'll ever make a living wage\nBut praise the Lord, I just got paid\n\nNow I know that people say\nMoney is the root of evil today\nBut the Lord he gives, and he takes away\nSo praise the Lord, I just got paid\n\nNow I know I should be tightening my belt\nBut tonight I'm gonna reach that higher shelf\nCuz the Lord helps he who helps himself\nSo praise the Lord, for this little bit of wealth\n\nNow I know that it ain't right\nThat I'm out here working day and night\nThe Lord says give to Caesar what is thine\nSo praise the Lord, [stop] I'm keepin mine!",
+      "updatedAt": "2026-09-29T01:18:49.275Z"
     },
     {
       "id": "song_sqgi8ezdg",
@@ -1571,6 +1644,18 @@
       "updatedAt": "2026-08-28T21:14:46.929Z"
     },
     {
+      "id": "song_x3ncyjrrl",
+      "title": "Ramblin Letters",
+      "artist": "Stanley Brothers",
+      "spotifyUrl": "https://open.spotify.com/search/Ramblin%20Letters%20Stanley%20Brothers",
+      "originalKey": "Eb",
+      "timeSignature": "4/4",
+      "bpm": "",
+      "genre": "Bluegrass",
+      "chordData": "   I don’t want your rambling letters\n   Don’t want your picture in a frame\n   All I want is you in person\n   Won’t you let me change your name\n\nMama said you’d come home soon\nPapa warned me not to wait\nSister thinks that you still love me\nHurry home right away\n\nI’m so tired of long distance kisses\nLove by mail is all so cold\nI just want you in my arms dear\nThen our love just can’t grow old",
+      "updatedAt": "2026-09-29T01:14:07.493Z"
+    },
+    {
       "id": "song_24dbmfgpo",
       "title": "Rank Strangers",
       "artist": "",
@@ -1917,6 +2002,18 @@
       "genre": "Bluegrass",
       "chordData": "",
       "updatedAt": "2026-09-11T21:47:23.391Z"
+    },
+    {
+      "id": "song_rx0hz8jp4",
+      "title": "Think Again",
+      "artist": "Morgan Smith",
+      "spotifyUrl": "https://open.spotify.com/search/Think%20Again%20Morgan%20Smith",
+      "originalKey": "C",
+      "timeSignature": "4/4",
+      "bpm": "",
+      "genre": "Bluegrass",
+      "chordData": "If you're thinkin bout thinkin bout me, well think again\nYou're as heartbroke and lonely honey, as you've ever been \nBut if that lovesick feeling has you walkin toward my door\nJust keep thinkin bout thinkin bout me, then you think some more\n\nWhen you walked out on me and said that we were through\nYou left me lyin here feelin lonely and so blue \nBut the passing of time, they say, heals every wound\nNow I'm over cryin all my tears because of you\n\nWhen you walked out on me and said it was the end\nYou ran around on town having fun with all your friends\nBut the passing of time for you, cut deeper than you dreamed\nSo now you're cryin all your tears because of me",
+      "updatedAt": "2026-09-29T01:19:16.144Z"
     },
     {
       "id": "song_08obw2yqw",
