@@ -1,5 +1,5 @@
 {
-  "activeSetlistId": "set_1787929490742",
+  "activeSetlistId": "set_1790642404734",
   "setlists": [
     {
       "id": "set_1",
@@ -191,6 +191,51 @@
         "song_bor02alej",
         "song_ob9fg5qbl"
       ]
+    },
+    {
+      "id": "set_1790642404734",
+      "name": "Fall Harvest Fest Oct 3",
+      "status": "active",
+      "songIds": [
+        "song_wrqc6hqoe",
+        "song_syb85nno9",
+        "song_8ap7a4ds0",
+        "song_zuczwlhs4",
+        "song_cage44pem",
+        "song_ob9fg5qbl",
+        "song_erzv9mioc",
+        "song_093zipcok",
+        "song_6vs19psfq",
+        "song_rqcy01x5w",
+        "song_x02bfwmpe",
+        "song_cqibfo86n",
+        "song_czmfzwy1l",
+        "song_20lw1xc2l",
+        "song_9xz5mjfcu",
+        "song_88l30ddxj"
+      ]
+    },
+    {
+      "id": "set_1790642523256",
+      "name": "Imported Setlist (9/28/2026)",
+      "status": "archived",
+      "songIds": [
+        "song_wrqc6hqoe",
+        "song_syb85nno9",
+        "song_erzv9mioc",
+        "song_8ap7a4ds0",
+        "song_cage44pem",
+        "song_ob9fg5qbl",
+        "song_093zipcok",
+        "song_6vs19psfq",
+        "song_rqcy01x5w",
+        "song_x02bfwmpe",
+        "song_cqibfo86n",
+        "song_czmfzwy1l",
+        "song_20lw1xc2l",
+        "song_9xz5mjfcu",
+        "song_88l30ddxj"
+      ]
     }
   ],
   "library": [
@@ -259,12 +304,12 @@
       "title": "Ain't Nobody Gonna Miss Me When I'm Gone",
       "artist": "",
       "spotifyUrl": "https://open.spotify.com/search/Ain't%20Nobody%20Gonna%20Miss%20Me%20When%20I'm%20Gone",
-      "originalKey": "",
+      "originalKey": "A",
       "timeSignature": "4/4",
       "bpm": "",
       "genre": "Bluegrass",
       "chordData": "Once I had a little sweetheart I love dearly\nWe planned the day when she would be my own\nAnother man he stole my darlin from me\nAnd there ain’t nobody gonna miss me when I’m gone\n\n   Oh there ain’t nobody gonna miss me when I’m gone\n   There ain’t nobody gonna mourn for me too long\n   Oh won’t you write these words upon my tombstone\n   There ain’t nobody gonna miss me when I’m gone\n\nI had a loving mother dear and daddy\nThey’ve gone to live where the angels love to dwell\nThey found eternal life up there in Heaven\nWhere I’ll find my reward no one can tell\n\nNow you’ve been faithful kind and ptrue to me old Copper\nYou’re the only one that’s never done me wrong\nI am weeping while I pat your head old Copper\nFor there ain’t nobody gonna miss me when I’m gone\n\n",
-      "updatedAt": "2026-08-28T15:04:33.098Z"
+      "updatedAt": "2026-09-29T00:46:12.939Z"
     },
     {
       "id": "song_zfo5epnt7",
@@ -619,12 +664,12 @@
       "title": "Devil In Disguise",
       "artist": "The Bluegrass Album Band",
       "spotifyUrl": "https://open.spotify.com/search/Devil%20In%20Disguise%20The%20Bluegrass%20Album%20Band",
-      "originalKey": "",
+      "originalKey": "A",
       "timeSignature": "4/4",
       "bpm": "",
       "genre": "Bluegrass",
       "chordData": "    She's the devil in disguise\n    You can see it in her eyes\n    She's telling dirty lies\n    She's the devil in disguise in disguise.\n\nNow a woman like that all she does is hate you\nShe doesn't know what makes a man a man\nShe'll talk about the times that she's been with you\nShe'll speak your name with everyone she can.\n\nUnhappiness has been her close companion\nHer soul is full of jealousy and doubt\nIt gets her up to see a person crying\nShe's just the kind that you can live without\n\nHer number always turns up in your pocket\nWhenever you are looking for a dime\nWell it's all right to call her but I'll bet you\nThe moon is full and you're just wasting time.",
-      "updatedAt": "2026-08-28T15:11:15.409Z"
+      "updatedAt": "2026-09-29T00:46:04.576Z"
     },
     {
       "id": "song_ea41096xo",
@@ -721,6 +766,18 @@
       "genre": "Country",
       "chordData": "Country music singers\nHave always been a real close family\nBut lately, some of my kinfolks\nHave disowned a few others and me\nI guess it's because\nI kinda changed my direction\nLord, I guess I went and broke their family tradition\n\nThey get on me and want to know\nHank, why do you drink?\nHank, why do you roll smoke?\nWhy must you live out the songs that you wrote?\nOver and over\nEverybody make my prediction\nSo if I get stoned, I'm just carrying on\nAn old family tradition\n\nI am very proud\nOf my daddy's name\nAlthough his kind of music\nAnd mine ain't exactly the same\nStop and think it over\nPut yourself in my position\nIf I get stoned and sing all night long\nIt's a family tradition\n\nSo don't ask me\nHank, why do you drink?\nHank, why do you roll smoke?\nWhy must you live out the songs that you wrote?\nIf I'm down in a honky-tonk\nAnd some ole slick's trying to give me friction\nI'll say, \"Leave me alone\nI'm singing all night long\nIt's a family tradition\"\nWhoa\n\nLordy, I have loved some ladies\nAnd I have loved Jim Beam\nAnd they both tried to kill me in 1973\nWhen that doctor asked me\n\"Son, how did you get in this condition?\"\nI said, \"Hey, Sawbones\nI'm just carrying on an ole family tradition\"\n\nSo don't ask me\nHank, why do you drink?\nHank, why do roll smoke?\nWhy must you live out the songs that you wrote?\nStop and think it over\nTry to put yourself in my unique position\nIf I get stoned and sing all night long\nIt's a family tradition\n",
       "updatedAt": "2026-08-28T14:38:40.958Z"
+    },
+    {
+      "id": "song_zuczwlhs4",
+      "title": "Farewell Blues",
+      "artist": "Traditional",
+      "spotifyUrl": "https://open.spotify.com/search/Farewell%20Blues%20Traditional",
+      "originalKey": "",
+      "timeSignature": "4/4",
+      "bpm": "",
+      "genre": "Bluegrass",
+      "chordData": "",
+      "updatedAt": "2026-09-29T00:53:21.089Z"
     },
     {
       "id": "song_qbud8p00p",
@@ -1398,12 +1455,24 @@
       "title": "Old Home Place",
       "artist": "",
       "spotifyUrl": "https://open.spotify.com/search/Old%20Home%20Place",
-      "originalKey": "Bb",
+      "originalKey": "A",
       "timeSignature": "4/4",
       "bpm": "",
       "genre": "Bluegrass",
       "chordData": "It's been ten long years since I left my home\nIn the hollow where I was born\nWhere the cool fall nights make the wood smoke rise\nAnd the foxhunter blows his horn\n\nI fell in love with a girl from the town\nI thought that she would be true\nI ran away to Charlottesville\nAnd worked in a sawmill or two\n\n   What have they done to the old home place\n   Why did they tear it down\n   And why did I leave the plow in the field\n   And look for a job in the town\n\nWell my girl she ran off with somebody else\nThe taverns took all my pay\nAnd here I stand where the old home stood\nBefore they took it away\n\nNow the geese they fly south and the cold wind blows\nAs I stand here and hang my head\nI've lost my love I've lost my home\nAnd now I wish that I was dead\n",
-      "updatedAt": "2026-09-11T21:51:35.734Z"
+      "updatedAt": "2026-09-29T00:54:45.072Z"
+    },
+    {
+      "id": "song_syb85nno9",
+      "title": "Old Joe Clark",
+      "artist": "Traditional",
+      "spotifyUrl": "https://open.spotify.com/search/Old%20Joe%20Clark%20Traditional",
+      "originalKey": "A",
+      "timeSignature": "4/4",
+      "bpm": "",
+      "genre": "Bluegrass",
+      "chordData": "",
+      "updatedAt": "2026-09-29T00:41:46.194Z"
     },
     {
       "id": "song_bxw3i39jn",
@@ -1464,6 +1533,18 @@
       "genre": "Country",
       "chordData": "Verse 1\n\nWell, I [G]got my first truck, when I was three\nDrove a hundred thousand miles [D]on my [G]knees\nHauled [C]marbles and rocks, and thought twice before\nI hauled a [G]Barbie Doll bed for the girl next door\nShe tried to [D]pay me with a kiss and I began to understand\nThere's just [G]something women like about a [NC]Pickup Man [G]\n(1 measure)\nWhen I [G]turned 16, I saved a few hundred bucks\nMy first car was a [D]Pickup [G]Truck\nI was [C]cruisin' the town and the first girl I seen\nWas [G]Bobbie Jo Gentry, the homecoming queen\nShe [D]flagged me down and climbed up in the cab, and said\n[G]\"I never knew you were a Pickup Man!\"\n\nChorus\nYou can [C]set my truck on fire, roll it down a hill\nBut I [G]still wouldn't trade it for a Coupe DeVille\nI got an [C]eight-foot bed that never has to be made\nYou know [D]if it weren't for trucks, we wouldn't have tailgates\nI met [C]all my wives in traffic jams\nThere's just [G]something women like about a [D]Pickup [G]Man\n\nVerse 2\nMost Friday nights, I can be found\nIn the back of my truck on an old chaise lounge\nBacked into my spot at the drive-in show\nYou know a cargo light gives off a romantic glow\nI never have to wait in line at the popcorn stand\nThere's just something women like about a Pickup Man\n\nChorus\nSolo\n[C G C D]\n\nA [C]bucket of rust, or a brand-new machine\n[D]Once around the block and you'll know what I mean\n\nChorus",
       "updatedAt": "2026-08-28T20:42:41.097Z"
+    },
+    {
+      "id": "song_cage44pem",
+      "title": "Poor Ellen Smith",
+      "artist": "",
+      "spotifyUrl": "https://open.spotify.com/search/Poor%20Ellen%20Smith",
+      "originalKey": "G",
+      "timeSignature": "4/4",
+      "bpm": "",
+      "genre": "Bluegrass",
+      "chordData": "Poor Ellen Smith how she was found\nShot through the heart lying cold on the ground\nHer clothers were all scattered and thrown on the ground\nAnd blood marks the spot where poor Ellen was found\n\nThey picked up their rifles and hunted me down\nAnd found me aloafign in Mount Airy town\nThey picked up the body and carried it away\nAnd now she is sleeping in some lonesome old grave\n\nI got a letter yesterday and I read it today\nThe flowers on her grave have all faded away\nSome day I'll go home and say when I go\nOn poor Ellen's grave pretty flowers I'll sow\n\nI've been in this prison for twenty long years\nEach night I see Ellen through my bitter tears\nThe warden just told me that soon I'll be free\nTo go to her grave near theat old willow tree\n\nMy days in this prison are ending at last\nI'll never be free from the sins of my past\nPoor Ellen Smith how she was found\nShot through the heart lying cold on the ground",
+      "updatedAt": "2026-09-29T00:45:14.058Z"
     },
     {
       "id": "song_3xmpryspz",
@@ -1872,6 +1953,18 @@
       "genre": "Bluegrass",
       "chordData": "    Hang your head, Tom Dooley\n    Hang your head and cry\n    You killed little Laurie Foster\n    And you know you're bound to die\n\nYou left her by the roadside where you begged to be excused\nYou left her by the roadside then you hid her clothes and shoes\n\nYou took her to the hillside for to make her your wife\nYou took her to the hillside and there you took her life\nYou dug the grave four feet long and you dug it three feet deep\nYou rolled that cold clay over her and you tromped it with your feet\n\nTrouble, oh its trouble a-roolin' o'er my breast\nAs long as I'm a livin', boys they just won't let me rest\nI know they're goin' to hang me tomorrow I'll be dead\nThough I never even harmed a hair on poor little Laurie's head\n\n\\In this world and one more then reckon where I'll be\nIf it wasn't for Sheriff Grayson I'd be in Tennessee\nAt this time tomorrow, boys where do you reckon I'll be?\nWay down yonder in the holler hangin' on a white oak tree\n\nTake down my old violin and play it all you please\nFor at this time tomorrow boys, it'll be of no use to me",
       "updatedAt": "2026-08-28T15:27:17.458Z"
+    },
+    {
+      "id": "song_20lw1xc2l",
+      "title": "Toy Heart",
+      "artist": "Bluegrass Album Band",
+      "spotifyUrl": "https://open.spotify.com/search/Toy%20Heart%20Bluegrass%20Album%20Band",
+      "originalKey": "C",
+      "timeSignature": "4/4",
+      "bpm": "",
+      "genre": "Bluegrass",
+      "chordData": "    Darling, you toyed with my toy heart\n    I think you played the game right from the start\n    This toy heart was broken when these parting words were spoken\n    Darling, you toyed with my toy heart\n\nYou played with my poor heart like a toy\nThat toy broke and then we had to part\nWell, it never can be mended, I hope this romance ended\nDarling, you toyed with my toy heart\n\nDarling, my time will come someday\nTime alone won't heal my broken heart\nWell, the clouds will roll away and the sun will shine someday\nDarling, you toyed with my toy heart\n",
+      "updatedAt": "2026-09-29T00:46:50.018Z"
     },
     {
       "id": "song_vol93xsb2",
